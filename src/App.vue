@@ -19,6 +19,7 @@
       </div>
     </div>
   </template>
+  
   <!-- light mode background -->
   <template  v-if="!darkMode">
     <div class="whitewrapper" style="z-index:0">
