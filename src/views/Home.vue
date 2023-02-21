@@ -6,7 +6,7 @@
             <span v-if="lang === 'es'" class="font-semibold" style="margin-bottom:16px;">¡Hola!, me llamo</span>
             <h1 class="font-bold ">Leandro Tosunian</h1>
             <span class="font-semibold reverse-text" v-if="lang === 'en'" >a freelancer Full Stack Web Developer</span>
-            <span class="font-semibold reverse-text" v-if="lang === 'es'" >desarrollador web Full Stack freelancer</span>
+            <span class="font-semibold reverse-text" v-if="lang === 'es'" >soy desarrollador web Full Stack</span>
         </div>
 
 
