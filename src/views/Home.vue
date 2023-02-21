@@ -69,7 +69,7 @@ export default {
     },
     data(){
         return {
-            lang: 'es'
+            lang: 'en'
         }
     },
     beforeMount(){
