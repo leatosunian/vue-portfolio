@@ -52,7 +52,7 @@ nav img {
 
 .dark{
     background-color: #0e1013;
-    color: rgb(255, 255, 255);
+    color: white;
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -79,7 +79,8 @@ h1{
     height: fit-content;
     z-index: 1000;
     position: relative;
-    background: radial-gradient(circle at 10% 20%, rgb(253, 193, 104) 0%, rgb(251, 128, 128) 90%);
+    /* background: linear-gradient(109.5deg, rgb(72, 203, 217) 11.2%, rgb(135, 218, 149) 91.1%); */
+    background: linear-gradient(91.7deg, rgb(79, 15, 153) -4.3%, rgb(122, 101, 149) 101.8%);
     background-clip: text;
     -webkit-background-clip: text;
 }
@@ -90,7 +91,7 @@ h1{
     top: 70px;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh !important;
     overflow: hidden;
     background: #0e1013; 
 }

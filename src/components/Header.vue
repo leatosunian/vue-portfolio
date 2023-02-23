@@ -21,12 +21,16 @@
 
               <!-- <font-awesome-icon v-if="darkMode" icon="fa-solid fa-sun" style="color:orange" @click="darkMode = darkmode" />
               <font-awesome-icon v-else icon="fa-solid fa-moon" v-on:click="darkMode = !darkmode" /> -->
+              <div class="flex gap-5 w-fit h-fit">
+                <span v-if="lang === 'en'" class="text-xs cursor-pointer" style="font-weight:600;" @click="toggleLang()" >EN</span>
+                <span v-if="lang === 'es'" class="text-xs cursor-pointer" style="font-weight:600;" @click="toggleLang()" >ES</span>
+                <font-awesome-icon v-if="darkMode" icon="fa-solid fa-sun" style="color:orange" class="cursor-pointer" @click="toggleMode()" />
+                <font-awesome-icon v-else icon="fa-solid fa-moon" class="cursor-pointer" @click="toggleMode()" />
+              </div>
 
-              <font-awesome-icon v-if="darkMode" icon="fa-solid fa-sun" style="color:orange" @click="toggleMode()" />
-              <font-awesome-icon v-else icon="fa-solid fa-moon" @click="toggleMode()" />
             </div>
       
-            <div v-if="!darkMode" v-on:click="toggleNav()" class="hamburguer">
+            <!-- <div v-if="!darkMode" v-on:click="toggleNav()" class="hamburguer">
               <span class="bar"></span>
               <span class="bar"></span>
               <span class="bar"></span>
@@ -68,7 +72,7 @@
                   Contacto
                 </a>
               </div>
-            </template>
+            </template> -->
 
 
         </nav>
@@ -122,16 +126,26 @@ export default {
       this.lang = 'en'
     },
     methods: {
+      toggleLang(){
+        if(this.lang === 'en'){
+          this.lang = 'es'
+          return this.$emit('getLang', this.lang)
+        }
+        if(this.lang === 'es'){
+          this.lang = 'en'
+          return this.$emit('getLang', this.lang)
+        }
+      },
         toggleMode(){
           if(this.darkMode == true){
             this.darkMode = false
-            this.$emit('getMode', this.darkMode)
-            return 
+            return this.$emit('getMode', this.darkMode)
+            
           } 
           if(!this.darkMode) {
             this.darkMode = true
-            this.$emit('getMode', this.darkMode)
-            return 
+            return this.$emit('getMode', this.darkMode)
+            
           }
         },
         toggleNav(){

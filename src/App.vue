@@ -2,9 +2,9 @@
 <div> 
   <!-- dark mode background -->
   <template  v-if="darkMode">
-    <div class="wrapper" style="z-index:0">
-      <Header @getMode="setMode" style="z-index: 1000" />
-      <router-view :class="{'dark': darkMode} " style="z-index: 2000" />
+    <div class="wrapper" >
+      <Header @getMode="setMode" @getLang="setLang"  />
+      <router-view :langg="lang" :class="{'dark': darkMode} " />
       <div class="box" style="z-index:0;">
         <div></div>
         <div></div>
@@ -17,14 +17,15 @@
         <div></div>
         <div></div>
       </div>
+      
     </div>
-  </template>
+  </template> -->
   
   <!-- light mode background -->
   <template  v-if="!darkMode">
-    <div class="whitewrapper" style="z-index:0">
-      <Header @getMode="setMode" style="z-index: 1000" />
-      <router-view :class="{'dark': darkMode} " style="z-index: 2000" />
+    <div class="whitewrapper" >
+      <Header @getMode="setMode" @getLang="setLang" />
+      <router-view :langg="lang" :class="{'dark': darkMode} "  />
       <div class="whitebox" style="z-index:0;">
         <div></div>
         <div></div>
@@ -37,9 +38,12 @@
         <div></div>
         <div></div>
       </div>
+      
     </div>
-  </template>
+  </template> 
 
+  <!-- <Header @getMode="setMode" />
+  <router-view :darkMode="darkMode"  /> -->
 </div>
   
 </template>
@@ -54,7 +58,8 @@
     },
     data(){
       return {
-        darkMode: true
+        darkMode: true,
+        lang: ''
       }
     },
     methods:{
@@ -62,6 +67,22 @@
         this.darkMode = mode
         console.log(this.darkMode);
         localStorage.setItem('port_darkmode', JSON.stringify(this.darkMode))
+      
+      },
+      setLang(lang){
+        this.lang = lang
+        console.log(this.lang)
+        localStorage.setItem('port_lang', this.lang)
+      },
+      changeBg(){
+        const background = document.querySelector('#htmlbg')
+
+            if(background.classList.contains('dark')){
+              background.classList.remove('dark')
+              return
+            }
+
+            background.classList.toggle('dark')
       }
     },
     watch:{
@@ -74,8 +95,14 @@
       }
     },
     beforeMount(){
-      this.darkMode = JSON.parse(localStorage.getItem('port_darkmode')) 
+      const modeLocalS = JSON.parse(localStorage.getItem('port_darkmode'))
+      if(modeLocalS){
+        this.darkMode = modeLocalS 
+      } else {
+        this.darkMode = true
+      }
     },
+    
   }
 
 </script>

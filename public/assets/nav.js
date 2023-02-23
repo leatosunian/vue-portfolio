@@ -1,5 +1,5 @@
 // nav expand animation on scrolldown //
-const nav = document.querySelector("#nav");
+/*const nav = document.querySelector("#nav");
 
 const onScroll = (event) => {
   const scrollPosition = event.target.scrollingElement.scrollTop;
@@ -12,7 +12,7 @@ const onScroll = (event) => {
       nav.classList.remove("scrolled-down");
     }
   }
-};
+};*/
 
 // hamburguer menu toggle //
 
