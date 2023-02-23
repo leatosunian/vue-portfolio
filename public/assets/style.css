@@ -300,7 +300,8 @@ h1{
         height: fit-content;
         z-index: 9999;
         position: relative;
-        background: radial-gradient(circle at 10% 20%, rgb(253, 193, 104) 0%, rgb(251, 128, 128) 90%);
+        /* background: radial-gradient(circle at 10% 20%, rgb(253, 193, 104) 0%, rgb(251, 128, 128) 90%); */
+        background: linear-gradient(91.7deg, rgb(79, 15, 153) -4.3%, rgb(122, 101, 149) 101.8%);
         background-clip: text;
         -webkit-background-clip: text;
     }
