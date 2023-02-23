@@ -2,12 +2,11 @@
 
     <div :class="[ {'dark': darkMode} , 'main-container-top']" >
         <div class="titleCont">
-            <span v-if="lang === 'en'" class="font-semibold" style="margin-bottom:16px;">Welcome all!, I'm</span>
-            <span v-if="lang === 'es'" class="font-semibold" style="margin-bottom:16px;">¡Hola!, me llamo</span>
+            <span v-if="langg === 'en'" class="font-semibold" style="margin-bottom:16px;">Welcome all!, I'm</span>
+            <span v-if="langg === 'es'" class="font-semibold" style="margin-bottom:16px;">¡Hola!, me llamo</span>
             <h1 class="font-bold ">Leandro Tosunian</h1>
-            <span class="font-semibold reverse-text" v-if="lang === 'en'" >a freelancer Full Stack Web Developer</span>
-            <span class="font-semibold reverse-text" v-if="lang === 'es'" >soy desarrollador web Full Stack</span>
-            <span>{{ langg }} </span>
+            <span class="font-semibold reverse-text" v-if="langg === 'en'" >a freelancer Full Stack Web Developer</span>
+            <span class="font-semibold reverse-text" v-if="langg === 'es'" >soy desarrollador web Full Stack</span>
         </div>
     </div>
 
@@ -87,7 +86,7 @@ export default {
     },
     props:{
         darkMode: null,
-        langg: ''
+        langg: 'en'
     },
     data(){
         return {
@@ -98,7 +97,9 @@ export default {
         this.lang = localStorage.getItem('port_lang')
         console.log(this.lang);
     },
-
+    mounted() {
+        console.log(this.name);
+    },
     methods: {
 
     }

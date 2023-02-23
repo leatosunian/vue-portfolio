@@ -108,7 +108,7 @@ export default {
     },
     data(){
         return {
-          darkMode: false,
+          darkMode: true,
           lang: ''
         }
     },
