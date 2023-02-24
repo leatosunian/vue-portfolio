@@ -95,7 +95,7 @@ h3{
         display: block;
         width:100px;
         float:right;
-        margin-left: 4px;
+        margin-left: 8px;
         margin-bottom: 4px;
         border-radius: 10px;
     }
