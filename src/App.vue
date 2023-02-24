@@ -5,6 +5,7 @@
     <div class="wrapper" >
       <Header @getMode="setMode" @getLang="setLang"  />
       <router-view :langg="lang" :class="{'dark': darkMode} " />
+      <Footer></Footer>
       <div class="box" style="z-index:0;">
         <div></div>
         <div></div>
@@ -26,6 +27,7 @@
     <div class="whitewrapper" >
       <Header @getMode="setMode" @getLang="setLang" />
       <router-view :langg="lang" :class="{'dark': darkMode} "  />
+      <Footer></Footer>
       <div class="whitebox" style="z-index:0;">
         <div></div>
         <div></div>
@@ -51,10 +53,12 @@
 <script>
 
   import Header from '@/components/Header.vue'
-  
+  import Footer from '@/components/Footer.vue'
+
   export default {
     components: {
-      Header
+      Header,
+      Footer
     },
     data(){
       return {

@@ -7,9 +7,15 @@
             <h1 class="font-bold ">Leandro Tosunian</h1>
             <span class="font-semibold reverse-text" v-if="langg === 'en'" >a freelancer Full Stack Web Developer</span>
             <span class="font-semibold reverse-text" v-if="langg === 'es'" >soy desarrollador web Full Stack</span>
-            <router-link v-if="langg === 'es'" to="/aboutme" class="mt-10 reverse-text pbarlink">Sobre mi</router-link>
-            <router-link v-if="langg === 'en'" to="/aboutme" class="mt-10 reverse-text pbarlink">About me</router-link>
+
         </div>
+        <div class="router-nav" style="justify-content: end !important;">
+            <div class="flex gap-2 align-items-center h-fit router-nav-link">
+                <router-link v-if="langg === 'es'" to="/aboutme" class="">Sobre mi</router-link>
+                <router-link v-if="langg === 'en'" to="/aboutme" class="">About me</router-link>
+                <font-awesome-icon style="width:12px; margin: 0 !important; " icon="fa-solid fa-arrow-right" />
+            </div>
+        </div>  
     </div>
 
 
@@ -49,6 +55,8 @@
     margin-top:20px;
 }
 
+
+
 @media (max-width: 768px){
     .main-container{
         height: 100vh;    
@@ -82,7 +90,6 @@
 </style>
 
 <script>
-
 export default {
     name: "Home",
     components: {

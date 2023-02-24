@@ -24,11 +24,21 @@
             <span class="font-semibold reverse-text" v-if="langg === 'es'" >soy desarrollador web Full Stack</span> -->
 
         </div>
-        <div class="flex justify-between w-full">
-            <router-link v-if="langg=== 'es'" to="/" class="mt-10 pbarlink">Inicio</router-link>
-            <router-link v-if="langg=== 'en'" to="/" class="mt-10 pbarlink">Home</router-link>
-            <router-link v-if="langg=== 'en'" to="/projects" class="mt-10 reverse-text pbarlink">My proyects</router-link>
-            <router-link v-if="langg=== 'es'" to="/projects" class="mt-10 reverse-text pbarlink">Mis proyectos</router-link>    
+        <div class="router-nav">
+            <div class="flex align-items-center h-fit router-nav-link">
+                <font-awesome-icon style="width:12px; margin: 0 !important; margin-right:8px!important;" icon="fa-solid fa-arrow-left" />
+                <router-link v-if="langg=== 'es'" to="/" >Inicio</router-link>
+                <router-link v-if="langg=== 'en'" to="/" >Home</router-link>
+                
+
+            </div>
+            <div class="flex gap-2 align-items-center h-fit router-nav-link">
+                <router-link v-if="langg=== 'en'" to="/projects" >My proyects</router-link>
+                <router-link v-if="langg=== 'es'" to="/projects" >Mis proyectos</router-link>
+                <font-awesome-icon style="width:12px; margin: 0 !important; " icon="fa-solid fa-arrow-right" />
+ 
+            </div>
+   
         </div>
     </div>
 </template>

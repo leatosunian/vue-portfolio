@@ -61,7 +61,35 @@ nav {
     -ms-transition: all ease-in-out .2s;
     -o-transition: all ease-in-out .2s;
 }
-  
+
+.router-nav-link{
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    transition: all ease-in-out .2s;
+    -webkit-transition: all ease-in-out .2s;
+    -moz-transition: all ease-in-out .2s;
+    -ms-transition: all ease-in-out .2s;
+    -o-transition: all ease-in-out .2s;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.router-nav-link:hover {
+    
+    transition: all ease-in-out .2s;
+    border: 1px solid rgb(92, 19, 177);
+    -webkit-transition: all ease-in-out .2s;
+    -moz-transition: all ease-in-out .2s;
+    -ms-transition: all ease-in-out .2s;
+    -o-transition: all ease-in-out .2s;
+}
 
 .links a:hover {
     color: rgb(79, 15, 153);
@@ -94,6 +122,16 @@ nav img {
     display: none;
 }
 
+.router-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    top: 70vh;
+    padding: 0 10vh;
+}
 .dark{
     background-color: #0e1013;
     color: white;
@@ -348,6 +386,10 @@ h1{
         background: linear-gradient(91.7deg, rgb(79, 15, 153) -4.3%, rgb(122, 101, 149) 101.8%);
         background-clip: text;
         -webkit-background-clip: text;
+    }
+
+    .router-nav {
+        padding: 0 1vh;
     }
 
     .links{
