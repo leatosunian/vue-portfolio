@@ -1,6 +1,6 @@
 <template>
     <div>
-        <nav id="nav" :class="{'darkbar': darkMode} ">
+        <nav id="nav" :class="{'darkbar': darkMode} " style="z-index:999999;">
             <div class="container flex">
               <img v-if="!darkMode" src="@/assets/lt1b.png" />
               <img v-if="darkMode" src="@/assets/lt1w.png" />

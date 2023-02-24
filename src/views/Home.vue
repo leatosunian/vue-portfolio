@@ -7,6 +7,8 @@
             <h1 class="font-bold ">Leandro Tosunian</h1>
             <span class="font-semibold reverse-text" v-if="langg === 'en'" >a freelancer Full Stack Web Developer</span>
             <span class="font-semibold reverse-text" v-if="langg === 'es'" >soy desarrollador web Full Stack</span>
+            <router-link v-if="langg === 'es'" to="/aboutme" class="mt-10 reverse-text pbarlink">Sobre mi</router-link>
+            <router-link v-if="langg === 'en'" to="/aboutme" class="mt-10 reverse-text pbarlink">About me</router-link>
         </div>
     </div>
 
@@ -66,9 +68,11 @@
         justify-content: center;
     }
     .titleCont span {
-        font-size: 20px;
+        font-size: 22px;
     }
-
+    .titleCont{
+        padding: 40px 6%;
+    }
     .reverse-text{
         align-self: flex-start!important; 
         margin-top:20px;
