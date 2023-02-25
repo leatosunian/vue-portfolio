@@ -117,7 +117,7 @@ h3{
 @media (max-width: 768px){
 
     .titles{
-        font-size: 20px !important;
+        font-size: 24px !important;
     }
     .aboutCont p {
         font-size: 14px;
@@ -126,7 +126,7 @@ h3{
         display: block;
         width:100px;
         float:right;
-        margin-left: 8px;
+        margin-left: 12px;
         margin-bottom: 4px;
         border-radius: 10px;
     }
