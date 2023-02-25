@@ -70,7 +70,7 @@
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.01);
     
-    box-shadow: 8px 8px 15px rgba(94, 18, 182, 0.25);
+    box-shadow: 8px 8px 15px rgba(94, 18, 182, 0.13);
     transition: all .2 ease-in-out;
     -webkit-transition: all ease-in-out .2s;
     -moz-transition: all ease-in-out .2s;
