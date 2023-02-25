@@ -3,11 +3,11 @@
     <div :class="[ {'dark': darkMode} , 'main-container-top']" >
         <div class="titleCont">
             <span v-if="langg === 'en'" class="font-semibold" style="margin-bottom:16px;">Let's get in</span>
-            <span v-if="langg === 'es'" class="font-semibold" style="margin-bottom:16px;">¡Hola!, me llamo</span>
+            <span v-if="langg === 'es'" class="font-semibold" style="margin-bottom:16px;">¡Pongamonos en </span>
             <h1 v-if="langg === 'en'" class="font-bold ">Contact!</h1>
-            <h1 v-if="langg === 'es'" class="font-bold ">Contactame!</h1>
+            <h1 v-if="langg === 'es'" class="font-bold ">Contacto!</h1>
             <span class="font-semibold reverse-text" v-if="langg === 'en'" >drop a DM on any of my social media:</span>
-            <span class="font-semibold reverse-text" v-if="langg === 'es'" >soy desarrollador web Full Stack</span>
+            <span class="font-semibold reverse-text" v-if="langg === 'es'" >escribime en mis redes sociales:</span>
             
             <a href="https://www.linkedin.com/in/leandrotosunian/" target="_blank" style="margin-bottom:18px; cursor:pointer; margin-top:40px">
                 <div class="linkCont">
@@ -69,7 +69,7 @@
     gap: 5px;
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.01);
-    
+    backdrop-filter: blur(4px);
     box-shadow: 8px 8px 15px rgba(94, 18, 182, 0.13);
     transition: all .2 ease-in-out;
     -webkit-transition: all ease-in-out .2s;
@@ -170,6 +170,7 @@
         display: flex;
         gap: 5px;
         align-items: center;
+        backdrop-filter: blur(4px);
         border: 1px solid transparent;
         transition: all .2 ease-in-out;
         -webkit-transition: all ease-in-out .2s;
