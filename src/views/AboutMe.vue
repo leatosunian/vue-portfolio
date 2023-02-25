@@ -1,5 +1,5 @@
 <template>
-    <div :class="[ {'dark': darkMode} , 'main-container-top']" >
+    <div :class="[ {'dark': darkMode} , 'main-container-top-about']" >
         <div class="aboutCont">
 
             <div class="w-fit h-fit picCont">
@@ -7,16 +7,16 @@
             </div>
 
             <div>
-                <h3 v-if="langg === 'es'">Sobre mi</h3>
-                <h3 v-if="langg === 'en'">About me</h3>
+                <h3 class="titles" v-if="langg === 'es'">Sobre mi</h3>
+                <h3 class="titles" v-if="langg === 'en'">About me</h3>
                 <p class="mb-4"><img src="@/assets/mypic.jpg" alt="" class="picContMobile">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit nulla asperiores beatae animi magnam voluptatibus enim iusto ipsa deserunt ducimus itaque accusamus in quod explicabo nihil voluptatum atque, magni, dolore reiciendis obcaecati qui, inventore eligendi provident. Ex, sunt repellat. Iste.
                 </p>
                 <p class="mb-4">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eum, repellendus velit et magni quos cumque? Perferendis provident tempora, fugiat ex quasi, nihil rerum tempore eaque illo ea repellat sit!
                 </p>
-                <h3 v-if="langg === 'es'">Mis conocimientos</h3>
-                <h3 v-if="langg === 'en'">Knowledge</h3>
+                <h3 class="titles" v-if="langg === 'es'">Mis conocimientos</h3>
+                <h3 class="titles" v-if="langg === 'en'">Knowledge</h3>
                 <p class="mb-5">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit nulla asperiores beatae animi magnam voluptatibus enim iusto ipsa deserunt ducimus itaque accusamus in quod explicabo nihil voluptatum atque, magni, dolore reiciendis obcaecati qui, inventore eligendi provident. Ex, sunt repellat. Iste.
                 </p>
@@ -55,7 +55,7 @@ h3{
     font-weight: 600!important;
     margin-bottom: 10px!important;
 }
-.main-container-top{
+.main-container-top-about{
     height: 80vh;    
     padding: 0 10%;
     display: flex;
@@ -94,6 +94,10 @@ h3{
     font-size: 15px;
 }
 
+.titles{
+    font-size: 24px;
+}
+
 .picCont img{
     position: relative;
     width: 500px;
@@ -111,8 +115,12 @@ h3{
 }
 
 @media (max-width: 768px){
-    .aboutCont{
-        padding: 0!important;
+
+    .titles{
+        font-size: 20px !important;
+    }
+    .aboutCont p {
+        font-size: 14px;
     }
     .picContMobile{
         display: block;
@@ -125,10 +133,12 @@ h3{
     .aboutCont{
         display: flex;
         flex-direction: column;
+        overflow-y: scroll;
         padding: 0 6%;
         gap: 50px;
         align-items: center;
         max-width: 100vw;
+        max-height: 70vh;
         width: fit-content;
         height: fit-content;
         border: 1px solid rgba(129, 129, 129, 0) ;
@@ -145,9 +155,9 @@ h3{
         align-items:center;
         justify-content:flex-start;
     }
-    .main-container-top{
+    .main-container-top-about{
         height: fit-content;    
-        padding: 20px 0%;
+        padding: 10px 0%;
         display: flex;
         flex-direction: column;
         align-items: center;
