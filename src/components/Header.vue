@@ -2,20 +2,20 @@
     <div>
         <nav id="nav" :class="{'darkbar': darkMode} " style="z-index:999999;">
             <div class="container flex">
-              <img v-if="!darkMode" src="@/assets/lt1b.png" />
-              <img v-if="darkMode" src="@/assets/lt1w.png" />
+              <img v-on:click="toHome()" style="cursor:pointer;" v-if="!darkMode" src="@/assets/lt1b.png" />
+              <img v-on:click="toHome()" style="cursor:pointer;" v-if="darkMode" src="@/assets/lt1w.png" />
               <template v-if="lang === 'es'">
                 <div class="links">
-                  <a>Sobre mi</a>
-                  <a>Proyectos</a>
-                  <a>Contacto</a>
+                  <router-link to="/aboutme">Sobre mi</router-link>
+                  <router-link to="/projects">Proyectos</router-link>
+                  <router-link to="/contact">Contacto</router-link>
                 </div>
               </template>
               <template v-if="lang === 'en'">
                 <div class="links">
-                  <a>About me</a>
-                  <a>Projects</a>
-                  <a>Contact</a>
+                  <router-link to="/aboutme">About me</router-link>
+                  <router-link to="/projects">Projects</router-link>
+                  <router-link to="/contact">Contact</router-link>
                 </div>
               </template>
 
@@ -126,6 +126,9 @@ export default {
       this.lang = 'en'
     },
     methods: {
+      toHome(){
+        this.$router.push({path: '/'})
+      },
       toggleLang(){
         if(this.lang === 'en'){
           this.lang = 'es'

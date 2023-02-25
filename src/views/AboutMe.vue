@@ -9,11 +9,16 @@
             <div>
                 <h3 v-if="langg === 'es'">Sobre mi</h3>
                 <h3 v-if="langg === 'en'">About me</h3>
-                <p class="mb-5"><img src="@/assets/mypic.jpg" alt="" class="picContMobile">
+                <p class="mb-4"><img src="@/assets/mypic.jpg" alt="" class="picContMobile">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit nulla asperiores beatae animi magnam voluptatibus enim iusto ipsa deserunt ducimus itaque accusamus in quod explicabo nihil voluptatum atque, magni, dolore reiciendis obcaecati qui, inventore eligendi provident. Ex, sunt repellat. Iste.
                 </p>
-                <p>
+                <p class="mb-4">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eum, repellendus velit et magni quos cumque? Perferendis provident tempora, fugiat ex quasi, nihil rerum tempore eaque illo ea repellat sit!
+                </p>
+                <h3 v-if="langg === 'es'">Mis conocimientos</h3>
+                <h3 v-if="langg === 'en'">Knowledge</h3>
+                <p class="mb-5"><img src="@/assets/mypic.jpg" alt="" class="picContMobile">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit nulla asperiores beatae animi magnam voluptatibus enim iusto ipsa deserunt ducimus itaque accusamus in quod explicabo nihil voluptatum atque, magni, dolore reiciendis obcaecati qui, inventore eligendi provident. Ex, sunt repellat. Iste.
                 </p>
             </div>
 
@@ -68,6 +73,7 @@ h3{
 }
 .aboutCont{
     display: flex;
+    box-shadow: 8px 8px 15px rgba(40, 40, 40, 0.2);
     flex-direction: row;
     padding: 3%;
     gap: 50px;
