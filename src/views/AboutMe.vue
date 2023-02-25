@@ -17,7 +17,7 @@
                 </p>
                 <h3 v-if="langg === 'es'">Mis conocimientos</h3>
                 <h3 v-if="langg === 'en'">Knowledge</h3>
-                <p class="mb-5"><img src="@/assets/mypic.jpg" alt="" class="picContMobile">
+                <p class="mb-5">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit nulla asperiores beatae animi magnam voluptatibus enim iusto ipsa deserunt ducimus itaque accusamus in quod explicabo nihil voluptatum atque, magni, dolore reiciendis obcaecati qui, inventore eligendi provident. Ex, sunt repellat. Iste.
                 </p>
             </div>
@@ -90,6 +90,10 @@ h3{
     font-size: 27px;
 }
 
+.aboutCont p {
+    font-size: 15px;
+}
+
 .picCont img{
     position: relative;
     width: 500px;
@@ -107,6 +111,9 @@ h3{
 }
 
 @media (max-width: 768px){
+    .aboutCont{
+        padding: 0!important;
+    }
     .picContMobile{
         display: block;
         width:100px;
