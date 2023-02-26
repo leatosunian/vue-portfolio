@@ -1,16 +1,21 @@
 <template>
     <div :class="[ {'dark': darkMode} , 'main-container-top']" >
+
         <div class="titleCont">
-            <span v-if="langg === 'en'" class="font-semibold" style="margin-bottom:16px;">Welcome all!, I'm</span>
-            <span v-if="langg === 'es'" class="font-semibold" style="margin-bottom:16px;">¡Hola!, me llamo</span>
-            <h1 class="font-bold ">Leandro Tosunian</h1>
-            <span class="font-semibold reverse-text" v-if="langg === 'en'" >a freelancer Full Stack Web Developer</span>
-            <span class="font-semibold reverse-text" v-if="langg === 'es'" >soy desarrollador web Full Stack</span>
-            <div class="flex justify-between w-full">
-                <router-link v-if="langg=== 'en'" to="/aboutme" class="mt-10 reverse-text pbarlink">About me</router-link>
-                <router-link v-if="langg=== 'es'" to="/aboutme" class="mt-10 reverse-text pbarlink">Sobre mi</router-link>    
-                <router-link v-if="langg=== 'en'" to="/contact" class="mt-10 reverse-text pbarlink">Contact</router-link>
-                <router-link v-if="langg=== 'es'" to="/contact" class="mt-10 reverse-text pbarlink">Contacto</router-link>      
+            <h1 class="font-bold " v-if="langg === 'es'" >Mis proyectos</h1>
+            <h1 class="font-bold " v-if="langg === 'en'" >My projects</h1>
+        </div>
+
+        <div class="router-nav">
+            <div class="flex align-items-center h-fit router-nav-link">
+                <font-awesome-icon style="width:12px; margin: 0 !important; margin-right:8px!important;" icon="fa-solid fa-arrow-left" />
+                <router-link v-if="langg=== 'es'" to="/aboutme" >Sobre mi</router-link>
+                <router-link v-if="langg=== 'en'" to="/aboutme" >About me</router-link>
+            </div>
+            <div class="flex gap-2 align-items-center h-fit router-nav-link">
+                <router-link v-if="langg=== 'en'" to="/contact" >Contact</router-link>
+                <router-link v-if="langg=== 'es'" to="/contact" >Contacto</router-link>
+                <font-awesome-icon style="width:12px; margin: 0 !important; " icon="fa-solid fa-arrow-right" />
             </div>
         </div>
     </div>

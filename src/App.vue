@@ -62,7 +62,7 @@
     },
     data(){
       return {
-        darkMode: true,
+        darkMode: false,
         lang: 'en'
       }
     },
@@ -99,12 +99,17 @@
       }
     },
     beforeMount(){
+      
       const modeLocalS = JSON.parse(localStorage.getItem('port_darkmode'))
-      if(modeLocalS){
-        this.darkMode = modeLocalS 
-      } else {
-        this.darkMode = true
+      console.log(modeLocalS);
+      if(modeLocalS != null){
+        return this.darkMode = modeLocalS 
+      } 
+      if(modeLocalS == null) {
+        this.darkMode = false
+        console.log('asd');
       }
+      console.log(this.darkMode);
     },
     
   }

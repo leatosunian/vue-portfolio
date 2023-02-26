@@ -45,13 +45,18 @@
                 </div>
             </a>
         </div>
-        <div class="router-nav" style="justify-content: end !important;">
+        <div class="router-nav">
+            <div class="flex align-items-center h-fit router-nav-link">
+                <font-awesome-icon style="width:12px; margin: 0 !important; margin-right:8px!important;" icon="fa-solid fa-arrow-left" />
+                <router-link v-if="langg=== 'es'" to="/projects" >Proyectos</router-link>
+                <router-link v-if="langg=== 'en'" to="/projects" >Projects</router-link>
+            </div>
             <div class="flex gap-2 align-items-center h-fit router-nav-link">
-                <router-link v-if="langg === 'es'" to="/aboutme" class="">Sobre mi</router-link>
-                <router-link v-if="langg === 'en'" to="/aboutme" class="">About me</router-link>
+                <router-link v-if="langg=== 'en'" to="/contact" >Home</router-link>
+                <router-link v-if="langg=== 'es'" to="/contact" >Inicio</router-link>
                 <font-awesome-icon style="width:12px; margin: 0 !important; " icon="fa-solid fa-arrow-right" />
             </div>
-        </div>  
+        </div> 
     </div>
 
 
