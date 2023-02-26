@@ -53,8 +53,8 @@
             </div>
             <div class="flex gap-2 align-items-center h-fit router-nav-link">
                 <font-awesome-icon icon="fa-solid fa-house-chimney" style="width:12px; margin: 0 !important; "/>
-                <router-link v-if="langg=== 'en'" to="/contact" >Home</router-link>
-                <router-link v-if="langg=== 'es'" to="/contact" >Inicio</router-link>
+                <router-link v-if="langg=== 'en'" to="/" >Home</router-link>
+                <router-link v-if="langg=== 'es'" to="/" >Inicio</router-link>
             </div>
         </div> 
     </div>
