@@ -21,7 +21,7 @@
 
               <!-- <font-awesome-icon v-if="darkMode" icon="fa-solid fa-sun" style="color:orange" @click="darkMode = darkmode" />
               <font-awesome-icon v-else icon="fa-solid fa-moon" v-on:click="darkMode = !darkmode" /> -->
-              <div class="flex gap-5 w-fit h-fit">
+              <div class="flex gap-7 w-fit h-fit">
                 <span v-if="lang === 'en'" class="text-xs cursor-pointer" style="font-weight:600;" @click="toggleLang()" >EN</span>
                 <span v-if="lang === 'es'" class="text-xs cursor-pointer" style="font-weight:600;" @click="toggleLang()" >ES</span>
                 <font-awesome-icon v-if="darkMode" icon="fa-solid fa-sun" style="color:orange" class="cursor-pointer" @click="toggleMode()" />

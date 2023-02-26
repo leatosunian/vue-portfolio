@@ -4,7 +4,11 @@
   <template  v-if="darkMode">
     <div class="wrapper" >
       <Header @getMode="setMode" @getLang="setLang"  />
-      <router-view :langg="lang" :class="{'dark': darkMode} " />
+      <router-view :langg="lang" :class="{'dark': darkMode} " v-slot="{Component}" >
+        <transition name="route" mode="out-in">
+          <component :is="Component"></component>
+        </transition>
+      </router-view>
       <Footer></Footer>
       <div class="box" style="z-index:0;">
         <div></div>
@@ -26,7 +30,13 @@
   <template  v-if="!darkMode">
     <div class="whitewrapper" >
       <Header @getMode="setMode" @getLang="setLang" />
-      <router-view :langg="lang" :class="{'dark': darkMode} "  />
+
+      <router-view :langg="lang" :class="{'dark': darkMode} " v-slot="{Component}" >
+        <transition name="route" mode="out-in">
+          <component :is="Component"></component>
+        </transition>
+      </router-view>
+
       <Footer></Footer>
       <div class="whitebox" style="z-index:0;">
         <div></div>
@@ -129,8 +139,33 @@
   -o-transition: all .3s ease-in-out;
 }
 
+/* animations */
 
+.route-enter-from {
+  opacity: 0;
+  transform: translateX(100px);
+}
 
+.route-enter-active {
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+}
+
+.route-leave-to {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.router-leave-active {
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+}
 
 
 </style>

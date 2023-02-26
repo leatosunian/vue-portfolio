@@ -134,11 +134,12 @@ h3{
         display: flex;
         flex-direction: column;
         overflow-y: scroll;
-        padding: 0 6%;
+        padding: 10px 6%;
         gap: 50px;
         align-items: center;
         max-width: 100vw;
         max-height: 70vh;
+        box-shadow: 0px 0px 0px rgb(40 40 40 / 20%)!important;
         width: fit-content;
         height: fit-content;
         border: 1px solid rgba(129, 129, 129, 0) ;
