@@ -79,23 +79,18 @@
     methods:{
       setMode(mode){
         this.darkMode = mode
-        console.log(this.darkMode);
-        localStorage.setItem('port_darkmode', JSON.stringify(this.darkMode))
-      
+        localStorage.setItem('port_darkmode', JSON.stringify(this.darkMode))      
       },
       setLang(lang){
         this.lang = lang
-        console.log(this.lang)
         localStorage.setItem('port_lang', this.lang)
       },
       changeBg(){
         const background = document.querySelector('#htmlbg')
-
             if(background.classList.contains('dark')){
               background.classList.remove('dark')
               return
             }
-
             background.classList.toggle('dark')
       }
     },
@@ -109,21 +104,15 @@
       }
     },
     beforeMount(){
-      
       const modeLocalS = JSON.parse(localStorage.getItem('port_darkmode'))
-      console.log(modeLocalS);
       if(modeLocalS != null){
         return this.darkMode = modeLocalS 
       } 
       if(modeLocalS == null) {
         this.darkMode = false
-        console.log('asd');
       }
-      console.log(this.darkMode);
-    },
-    
+    },    
   }
-
 </script>
 
 <style>

@@ -3,7 +3,7 @@
     <div :class="[ {'dark': darkMode} , 'main-container-top']" >
         <div class="titleCont">
             <span v-if="langg === 'en'" class="font-semibold" style="margin-bottom:16px;">Let's get in</span>
-            <span v-if="langg === 'es'" class="font-semibold" style="margin-bottom:16px;">¡Pongamonos en </span>
+            <span v-if="langg === 'es'" class="font-semibold" style="margin-bottom:16px;">¡Pongámonos en </span>
             <h1 v-if="langg === 'en'" class="font-bold ">Contact!</h1>
             <h1 v-if="langg === 'es'" class="font-bold ">Contacto!</h1>
             <span class="font-semibold reverse-text" v-if="langg === 'en'" >drop a DM on any of my social media:</span>

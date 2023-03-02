@@ -130,7 +130,7 @@ nav img {
     height: fit-content;
     position: absolute;
     left: 0;
-    top: 74vh;
+    top: 78vh;
     padding: 0 20vh;
 }
 .dark{
@@ -391,6 +391,7 @@ h1{
 
     .router-nav {
         padding: 0 1vh;
+        top: 76vh;
     }
 
     .links{
