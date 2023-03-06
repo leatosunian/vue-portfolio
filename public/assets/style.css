@@ -130,9 +130,11 @@ nav img {
     height: fit-content;
     position: absolute;
     left: 0;
-    top: 78vh;
+    top: 79vh;
     padding: 0 20vh;
 }
+
+
 .dark{
     background-color: #0e1013;
     color: white;
