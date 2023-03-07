@@ -90,13 +90,14 @@
 <style>
 
 .cardsContainer::-webkit-scrollbar {
+    margin-left: 4px;
     width: 11px;
     color: red;
     transition: .3s all ease-in-out;
 }
   
 .cardsContainer::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.568);
+    background: rgba(73, 73, 73, 0.168);
     transition: .3s all ease-in-out;
     border-radius: 100vw; 
     -webkit-border-radius: 100vw;
@@ -106,11 +107,11 @@
 }
   
 .cardsContainer::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #dc243085, #7b43977e);
+    background: linear-gradient(to bottom, #6e13b985, #7b43977e);
     height: 50px;
     border-radius: 100vw;
     transition: .3s all ease-in-out;
-    border: 4px solid linear-gradient(to bottom, #dc2430, #7b4397);
+    border: 4px solid linear-gradient(to bottom, #6e13b9, #7b4397);
     -webkit-transition: .3s all ease-in-out;
     -moz-transition: .3s all ease-in-out;
     -ms-transition: .3s all ease-in-out;
@@ -122,7 +123,7 @@
 }
   
 .cardsContainer::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to bottom, #dc2430, #7b4397);
+    background: linear-gradient(to bottom, #6e13b9, #7b4397);
     transition: .3s all ease-in-out;
 }
 
@@ -232,6 +233,12 @@
 }
 
 @media (max-width:768px){
+
+    .cardsContainer::-webkit-scrollbar {
+        width: 4px;
+        color: red;
+        transition: .3s all ease-in-out;
+      }
     .textHeader h1 {
         font-size: 1.3em !important;
     }
