@@ -89,6 +89,43 @@
 
 <style>
 
+.cardsContainer::-webkit-scrollbar {
+    width: 11px;
+    color: red;
+    transition: .3s all ease-in-out;
+}
+  
+.cardsContainer::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.568);
+    transition: .3s all ease-in-out;
+    border-radius: 100vw; 
+    -webkit-border-radius: 100vw;
+    -moz-border-radius: 100vw;
+    -ms-border-radius: 100vw;
+    -o-border-radius: 100vw;
+}
+  
+.cardsContainer::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #dc243085, #7b43977e);
+    height: 50px;
+    border-radius: 100vw;
+    transition: .3s all ease-in-out;
+    border: 4px solid linear-gradient(to bottom, #dc2430, #7b4397);
+    -webkit-transition: .3s all ease-in-out;
+    -moz-transition: .3s all ease-in-out;
+    -ms-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+    -webkit-border-radius: 100vw;
+    -moz-border-radius: 100vw;
+    -ms-border-radius: 100vw;
+    -o-border-radius: 100vw;
+}
+  
+.cardsContainer::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #dc2430, #7b4397);
+    transition: .3s all ease-in-out;
+}
+
 .linkCont{
     height: 42px;
     border-radius: 50px;
