@@ -2,7 +2,7 @@
     <div :class="[ {'dark': darkMode} , 'main-container-top-projects']" >
 
         <div class="textHeader">
-            <h1 class="font-bold " style="line-height: 50px!important; font-weight:700; letter-spacing:.04em;" v-if="langg === 'es'" >Mis proyectos</h1>
+            <span class="font-bold " style="line-height: 50px!important; font-weight:700; letter-spacing:.04em;" v-if="langg === 'es'" >Mis proyectos</span>
             <span class="font-bold " style="line-height: 50px!important ;font-weight:700; letter-spacing:.04em;" v-if="langg === 'en'" >My projects</span>
         </div>
 
@@ -14,16 +14,17 @@
                 <div class="detailsCont">
                     <span>eMart - Tienda online</span>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, pariatur accusamus sapiente facere reprehenderit ipsa explicabo ipsum quo eum architecto? Voluptas nulla vero labore doloremque accusantium ab architecto iusto dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusamus unde deleniti illum earum, delectus quis nisi magni cumque necessitatibus dolorum aliquid! Saepe doloremque accusantium quod officia dolor hic Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ea reiciendis incidunt animi, recusandae consectetur maiores.</p>
-                    <div style="display:flex; align-items:end">
-                        <p style="font-weight:500; font-size:19px;">Made with: </p>
+                    <div style="display:flex; align-items:end; gap:5px;" class="mt-2">
+                        <p style="font-weight:500; font-size:15px; line-height:15px; margin-right:3px;" v-if="langg === 'en'">Made with: </p>
+                        <p style="font-weight:500; font-size:15px; line-height:15px; margin-right:3px;" v-if="langg === 'es'">Desarrollado con: </p>
                         <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
-                        <img src="@/assets/mongodblogo.png" style="width:30px; border-radius:6px;" alt="">
-                        <img src="@/assets/express.png" style="width:30px" alt="">
-                        <img src="@/assets/vue.png" style="width:35px" alt="">
-                        <img src="@/assets/nodejs.png" style="width:29px" alt="">
+                        <img src="@/assets/mongodblogo.png" title="MongoDB" style="width:23px; border-radius:6px;" alt="">
+                        <img src="@/assets/express.png" title="Express JS" style="width:23px" alt="">
+                        <img src="@/assets/vue.png" title="Vue" style="width:23px" alt="">
+                        <img src="@/assets/nodejs.png" title="Node.js" style="width:20px" alt="">
                     </div>
-                    <a href="https://www.e-mart.com.ar/" target="_blank" style="margin-bottom:18px; cursor:pointer;">
-                        <div class="linkCont">
+                    <a href="https://www.e-mart.com.ar/" target="_blank" style="margin-bottom:18px;  cursor:pointer;">
+                        <div class="linkCont mt-4">
                             <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
                                 <font-awesome-icon icon="fa-solid fa-link" style="height: 17px; margin: 0!important;" />
                             </div>
@@ -41,7 +42,7 @@
                     <span>eMart - Panel de administración</span>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, pariatur accusamus sapiente facere reprehenderit ipsa explicabo ipsum quo eum architecto? Voluptas nulla vero labore doloremque accusantium ab architecto iusto dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusamus unde deleniti illum earum, delectus quis nisi magni cumque necessitatibus dolorum aliquid! Saepe doloremque accusantium quod officia dolor hic Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ea reiciendis incidunt animi, recusandae consectetur maiores.</p>
                     <a href="https://www.panel.e-mart.com.ar/" target="_blank" style="margin-bottom:18px; cursor:pointer;">
-                        <div class="linkCont">
+                        <div class="linkCont mt-4">
                             <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
                                 <font-awesome-icon icon="fa-solid fa-link" style="height: 17px; margin: 0!important;" />
                             </div>
@@ -60,7 +61,7 @@
                     <span>Cultura Sativa Growshop - Catálogo</span>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, pariatur accusamus sapiente facere reprehenderit ipsa explicabo ipsum quo eum architecto? Voluptas nulla vero labore doloremque accusantium ab architecto iusto dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusamus unde deleniti illum earum, delectus quis nisi magni cumque necessitatibus dolorum aliquid! Saepe doloremque accusantium quod officia dolor hic Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ea reiciendis incidunt animi, recusandae consectetur maiores.</p>
                     <a href="https://culturasativa.com.ar/" target="_blank" style="margin-bottom:18px; cursor:pointer;">
-                        <div class="linkCont">
+                        <div class="linkCont mt-4">
                             <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
                                 <font-awesome-icon icon="fa-solid fa-link" style="height: 17px; margin: 0!important;" />
                             </div>
@@ -186,6 +187,7 @@
 .card{
     width: 48%;
     height: 98%;
+    padding-bottom: 10px;
     border: 1px solid rgba(0, 0, 0, 0.247);
     border-radius: 12px;
     backdrop-filter: blur(5px);
@@ -272,6 +274,7 @@
         width: 100%;
         height: fit-content;
         padding: 0px;
+        padding-bottom: 10px;
         min-height: 50vh;
         border: 1px solid rgba(197, 197, 197, 0.1);
     }
