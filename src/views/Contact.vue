@@ -160,7 +160,7 @@
         font-size: 22px;
     }
     .titleCont{
-        padding: 40px 6%;
+        padding: 30px 6%;
     }
     .reverse-text{
         align-self: flex-start!important; 

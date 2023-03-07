@@ -41,6 +41,15 @@
                 <div class="detailsCont">
                     <span>eMart - Panel de administración</span>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, pariatur accusamus sapiente facere reprehenderit ipsa explicabo ipsum quo eum architecto? Voluptas nulla vero labore doloremque accusantium ab architecto iusto dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusamus unde deleniti illum earum, delectus quis nisi magni cumque necessitatibus dolorum aliquid! Saepe doloremque accusantium quod officia dolor hic Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ea reiciendis incidunt animi, recusandae consectetur maiores.</p>
+                    <div style="display:flex; align-items:end; gap:5px;" class="mt-2">
+                        <p style="font-weight:500; font-size:15px; line-height:15px; margin-right:3px;" v-if="langg === 'en'">Made with: </p>
+                        <p style="font-weight:500; font-size:15px; line-height:15px; margin-right:3px;" v-if="langg === 'es'">Desarrollado con: </p>
+                        <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
+                        <img src="@/assets/mongodblogo.png" title="MongoDB" style="width:23px; border-radius:6px;" alt="">
+                        <img src="@/assets/express.png" title="Express JS" style="width:23px" alt="">
+                        <img src="@/assets/vue.png" title="Vue" style="width:23px" alt="">
+                        <img src="@/assets/nodejs.png" title="Node.js" style="width:20px" alt="">
+                    </div>
                     <a href="https://www.panel.e-mart.com.ar/" target="_blank" style="margin-bottom:18px; cursor:pointer;">
                         <div class="linkCont mt-4">
                             <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
@@ -60,6 +69,14 @@
                 <div class="detailsCont">
                     <span>Cultura Sativa Growshop - Catálogo</span>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, pariatur accusamus sapiente facere reprehenderit ipsa explicabo ipsum quo eum architecto? Voluptas nulla vero labore doloremque accusantium ab architecto iusto dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusamus unde deleniti illum earum, delectus quis nisi magni cumque necessitatibus dolorum aliquid! Saepe doloremque accusantium quod officia dolor hic Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ea reiciendis incidunt animi, recusandae consectetur maiores.</p>
+                    <div style="display:flex; align-items:end; gap:5px;" class="mt-2">
+                        <p style="font-weight:500; font-size:15px; line-height:15px; margin-right:3px;" v-if="langg === 'en'">Made with: </p>
+                        <p style="font-weight:500; font-size:15px; line-height:15px; margin-right:3px;" v-if="langg === 'es'">Desarrollado con: </p>
+                        <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
+                        <img src="@/assets/html.png" title="HTML5" style="width:23px; border-radius:6px;" alt="">
+                        <img src="@/assets/css.png" title="CSS3" style="width:23px" alt="">
+                        <img src="@/assets/js.png" title="JavaScript" style="width:23px" alt="">
+                    </div>  
                     <a href="https://culturasativa.com.ar/" target="_blank" style="margin-bottom:18px; cursor:pointer;">
                         <div class="linkCont mt-4">
                             <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
