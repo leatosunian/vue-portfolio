@@ -1,13 +1,52 @@
 <template>
 
     <div :class="[ {'dark': darkMode} , 'main-container-top']" >
-        <div class="titleCont">
+        <div class="titleContHome">
             <span v-if="langg === 'en'" class="font-semibold" style="margin-bottom:16px;">Welcome all!, I'm</span>
             <span v-if="langg === 'es'" class="font-semibold" style="margin-bottom:16px;">¡Hola!, me llamo</span>
             <h1 class="font-bold ">Leandro Tosunian</h1>
             <span class="font-semibold reverse-text" v-if="langg === 'en'" >a freelancer Full Stack Web Developer</span>
             <span class="font-semibold reverse-text" v-if="langg === 'es'" >soy desarrollador web Full Stack</span>
-
+            <div v-if="!darkMode" class="" style="height:150px; width:100%; display:flex; justify-content:center; align-items:center; gap:50px; ">
+                <div class="buttons" >
+                    <a v-if="langg === 'es'" href="https://www.linkedin.com/in/leandrotosunian/" target="_blank" style="cursor:pointer;">
+                        <div class="btnCont">
+                            <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
+                                <font-awesome-icon icon="fa-brands fa-linkedin" style="height: 22px; margin: 0!important;" />
+                            </div>
+                            <p class="btnSpan" >Mi CV</p>
+                        </div>
+                    </a>
+                    <a v-if="langg === 'en'" href="https://www.linkedin.com/in/leandrotosunian/" target="_blank" style="cursor:pointer;">
+                        <div class="btnCont">
+                            <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
+                                <font-awesome-icon icon="fa-brands fa-linkedin" style="height: 22px; margin: 0!important;" />
+                            </div>
+                            <p class="btnSpan" >My CV</p>
+                        </div>
+                    </a>
+                    <!-- <p>Mi CV</p> -->
+                </div>       
+                <div class="buttons" >
+                    <!-- <p>Contactame</p> -->
+                    <router-link to="/contact" v-if="langg === 'es'" style=" cursor:pointer; ">
+                        <div class="btnCont">
+                            <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
+                                <font-awesome-icon icon="fa-brands fa-linkedin" style="height: 22px; margin: 0!important;" />
+                            </div>
+                            <p class="btnSpan" >Contactame</p>
+                        </div>
+                    </router-link>
+                    <router-link to="/contact" v-if="langg === 'en'" style=" cursor:pointer; ">
+                        <div class="btnCont">
+                            <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
+                                <font-awesome-icon icon="fa-brands fa-linkedin" style="height: 22px; margin: 0!important;" />
+                            </div>
+                            <p class="btnSpan" >Contact me</p>
+                        </div>
+                    </router-link>
+                </div>
+            </div>
         </div>
         <div class="router-nav" style="justify-content: end !important;">
             <div class="flex gap-2 align-items-center h-fit router-nav-link">
@@ -23,6 +62,57 @@
 </template>
 
 <style>
+
+
+.btnCont{
+    height:fit-content;
+    border-radius: 50px;
+    width: fit-content;
+    padding: 14px 25px;
+    padding-right: 30px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(4px);
+    box-shadow: 8px 8px 15px rgba(94, 18, 182, 0.13);
+    transition: all .2 ease-in-out;
+    -webkit-transition: all ease-in-out .2s;
+    -moz-transition: all ease-in-out .2s;
+    -ms-transition: all ease-in-out .2s;
+    -o-transition: all ease-in-out .2s;
+    
+}
+.btnCont:hover{
+    box-shadow: 0px 0px 0px rgba(94, 18, 182, 0.25);
+    border-color: rgba(94, 18, 182, .6);
+    transition: all .2 ease-in-out;
+    -webkit-transition: all ease-in-out .2s;
+    -moz-transition: all ease-in-out .2s;
+    -ms-transition: all ease-in-out .2s;
+    -o-transition: all ease-in-out .2s;
+}
+.btnSpan{
+    font-weight: 500;
+    
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight:500;
+}
+
+
+
+.buttons{
+    display:flex; 
+    justify-content:center; 
+    align-items:center; 
+    width:fit-content; 
+    height:fit-content; 
+}
+.buttons span {
+    font-size: 17px!important;
+}
 .main-container-top{
     height: 80vh;    
     padding: 0 10%;
@@ -39,14 +129,14 @@
     align-items: center;
     justify-content: center;
 }
-.titleCont{
+.titleContHome{
     display: flex;
     flex-direction: column;
     align-items: start;
     width: fit-content;
     height: fit-content;
 }
-.titleCont span {
+.titleContHome span {
     font-size: 27px;
 }
 
@@ -55,9 +145,47 @@
     margin-top:20px;
 }
 
-
+.titleContHome{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: fit-content;
+    height: fit-content;
+}
+.titleContHome span {
+    font-size: 27px;
+}
 
 @media (max-width: 768px){
+    .titleContHome span {
+        font-size: 22px;
+    }
+    .titleContHome{
+        padding: 25px 0%!important;
+    }
+
+    .btnSpan{
+        font-size:14px!important; 
+        font-weight:500;
+    }
+    .btnCont{
+        height: 42px;
+        border-radius: 50px;
+        width: fit-content;
+        padding: 0 5px;
+        padding-right: 15px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        backdrop-filter: blur(4px);
+        border: 1px solid transparent;
+        transition: all .2 ease-in-out;
+        -webkit-transition: all ease-in-out .2s;
+        -moz-transition: all ease-in-out .2s;
+        -ms-transition: all ease-in-out .2s;
+        -o-transition: all ease-in-out .2s;
+    }
+
     .main-container{
         height: 100vh;    
         padding: 0 10%;
@@ -75,10 +203,10 @@
         align-items: center;
         justify-content: center;
     }
-    .titleCont span {
+    .titleContHome span {
         font-size: 22px;
     }
-    .titleCont{
+    .titleContHome{
         padding: 40px 6%;
     }
     .reverse-text{
@@ -101,18 +229,13 @@ export default {
     },
     data(){
         return {
-            lang: 'en'
+            lang: 'en',
+            modo: null
         }
     },
     beforeMount(){
         this.lang = localStorage.getItem('port_lang')
-        console.log(this.lang);
     },
-    mounted() {
-        console.log(this.name);
-    },
-    methods: {
 
-    }
 }
 </script>

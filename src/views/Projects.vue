@@ -2,8 +2,8 @@
     <div :class="[ {'dark': darkMode} , 'main-container-top-projects']" >
 
         <div class="textHeader">
-            <span class="font-bold " style="line-height: 50px!important; font-weight:700; letter-spacing:.04em;" v-if="langg === 'es'" >Mis proyectos</span>
-            <span class="font-bold " style="line-height: 50px!important ;font-weight:700; letter-spacing:.04em;" v-if="langg === 'en'" >My projects</span>
+            <span class="font-bold " style="line-height: 51px!important; font-weight:600; letter-spacing:.04em;" v-if="langg === 'es'" >Mis proyectos</span>
+            <span class="font-bold " style="line-height: 51px!important ;font-weight:600; letter-spacing:.04em;" v-if="langg === 'en'" >My projects</span>
         </div>
 
         <div class="cardsContainer">
