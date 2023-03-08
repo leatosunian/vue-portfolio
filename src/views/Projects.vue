@@ -24,7 +24,7 @@
                         <img src="@/assets/nodejs.png" title="Node.js" style="width:20px" alt="">
                     </div>
                     <a href="https://www.e-mart.com.ar/" target="_blank" style="margin-bottom:18px;  cursor:pointer;">
-                        <div class="linkCont mt-4">
+                        <div class="mt-4 linkCont">
                             <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
                                 <font-awesome-icon icon="fa-solid fa-link" style="height: 17px; margin: 0!important;" />
                             </div>
@@ -51,7 +51,7 @@
                         <img src="@/assets/nodejs.png" title="Node.js" style="width:20px" alt="">
                     </div>
                     <a href="https://www.panel.e-mart.com.ar/" target="_blank" style="margin-bottom:18px; cursor:pointer;">
-                        <div class="linkCont mt-4">
+                        <div class="mt-4 linkCont">
                             <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
                                 <font-awesome-icon icon="fa-solid fa-link" style="height: 17px; margin: 0!important;" />
                             </div>
@@ -78,7 +78,7 @@
                         <img src="@/assets/js.png" title="JavaScript" style="width:23px" alt="">
                     </div>  
                     <a href="https://culturasativa.com.ar/" target="_blank" style="margin-bottom:18px; cursor:pointer;">
-                        <div class="linkCont mt-4">
+                        <div class="mt-4 linkCont">
                             <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
                                 <font-awesome-icon icon="fa-solid fa-link" style="height: 17px; margin: 0!important;" />
                             </div>
@@ -274,7 +274,7 @@
     .cardsContainer{
         margin-top:20px;
         width: 100%;
-        height: 50vh;
+        height: 58vh;
         min-height: 60vh;
         padding: 30px;
         gap: 30px;

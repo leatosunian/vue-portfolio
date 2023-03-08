@@ -16,9 +16,8 @@ const onScroll = (event) => {
 
 // hamburguer menu toggle //
 
-document.addEventListener("scroll", onScroll);
 
-const hamburguer = document.querySelector('.hamburguer')
+/*const hamburguer = document.querySelector('.hamburguer')
 const navMenu = document.querySelector('.nav-menu')
 
 hamburguer.addEventListener('click', () => {
@@ -30,4 +29,4 @@ document.querySelectorAll('.nav-link').forEach(e  => e.addEventListener('click',
     hamburguer.classList.remove('active')
     navMenu.classList.remove('active')
 
-}))
+}))*/
