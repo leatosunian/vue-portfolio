@@ -2,7 +2,7 @@
     <div :class="[ {'dark': darkMode} , 'main-container-top-projects']" >
 
         <div class="textHeader">
-            <span class="font-bold " style="line-height: 51px!important; font-weight:600; letter-spacing:.04em;" v-if="langg === 'es'" >Mis proyectos</span>
+            <span class="font-bold " style="line-height: 51px!important; font-weight:600; letter-spacing:.05em;" v-if="langg === 'es'" >Mis proyectos</span>
             <span class="font-bold " style="line-height: 51px!important ;font-weight:600; letter-spacing:.04em;" v-if="langg === 'en'" >My projects</span>
         </div>
 
@@ -13,7 +13,7 @@
                 </div>
                 <div class="detailsCont">
                     <span>eMart - Tienda online</span>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, pariatur accusamus sapiente facere reprehenderit ipsa explicabo ipsum quo eum architecto? Voluptas nulla vero labore doloremque accusantium ab architecto iusto dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusamus unde deleniti illum earum, delectus quis nisi magni cumque necessitatibus dolorum aliquid! Saepe doloremque accusantium quod officia dolor hic Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ea reiciendis incidunt animi, recusandae consectetur maiores.</p>
+                    <p>Esta es la tienda online del proyecto eMart, la cual tiene: un <b>listado de los productos</b> y <b>filtros</b> para clasificarlos: por categoría y/o subcategoría, por las <b>variantes del producto</b>(ej. color, talle, modelo, etc.), de mayor a menor precio y viceversa) y un <b>carrito de compras</b> donde se agregan los productos que el cliente quiera comprar. El <b>pago</b> se realiza de manera <b>segura</b> mediante <b>Mercado Pago</b>. El cliente tiene en su perfil el <b>historial de sus compras</b> y los datos de cada una, donde se le enviará el <b>código de seguimiento</b> del correo y podrá consultar el estado del envío. Cada cliente se crea su propio perfil y <b>solamente</b> se podrá comprar si sos un <b>cliente registrado</b></p>
                     <div style="display:flex; align-items:end; gap:5px;" class="mt-2">
                         <p style="font-weight:500; font-size:15px; line-height:15px; margin-right:3px;" v-if="langg === 'en'">Made with: </p>
                         <p style="font-weight:500; font-size:15px; line-height:15px; margin-right:3px;" v-if="langg === 'es'">Desarrollado con: </p>
@@ -26,7 +26,7 @@
                     <a href="https://www.e-mart.com.ar/" target="_blank" style="margin-bottom:18px;  cursor:pointer;">
                         <div class="mt-4 linkCont">
                             <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
-                                <font-awesome-icon icon="fa-solid fa-link" style="height: 17px; margin: 0!important;" />
+                                <font-awesome-icon icon="fa-solid fa-link" style="height: 14px; margin: 0!important;" />
                             </div>
                             <span class="linkSpan" >e-mart.com.ar</span>
                         </div>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="detailsCont">
                     <span>eMart - Panel de administración</span>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, pariatur accusamus sapiente facere reprehenderit ipsa explicabo ipsum quo eum architecto? Voluptas nulla vero labore doloremque accusantium ab architecto iusto dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusamus unde deleniti illum earum, delectus quis nisi magni cumque necessitatibus dolorum aliquid! Saepe doloremque accusantium quod officia dolor hic Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ea reiciendis incidunt animi, recusandae consectetur maiores.</p>
+                    <p>Este es el panel de administración de la tienda, donde podrás: <b>agregar, modificar, desactivar o borrar los productos</b> y sus respectivas <b>fotos</b> que se muestran en la tienda; modificar los <b>costos de envío</b> y establecer un monto a partir del cual el <b>envío es gratis</b> (opcional); personalizar las <b>categorias y las subcategorias</b> en las que se clasifican los productos; <b>visualizar los pedidos</b> realizados en la tienda con los datos del cliente, del envio y de los productos de la compra. Luego de despachar los productos en el correo, se le envia el <b>código de seguimiento</b> al cliente para que pueda hacer el tracking de su pedido. En el <b>historial de pedidos</b> podés filtrar por dia o por período o buscar por número de orden.</p>
                     <div style="display:flex; align-items:end; gap:5px;" class="mt-2">
                         <p style="font-weight:500; font-size:15px; line-height:15px; margin-right:3px;" v-if="langg === 'en'">Made with: </p>
                         <p style="font-weight:500; font-size:15px; line-height:15px; margin-right:3px;" v-if="langg === 'es'">Desarrollado con: </p>
@@ -53,7 +53,7 @@
                     <a href="https://www.panel.e-mart.com.ar/" target="_blank" style="margin-bottom:18px; cursor:pointer;">
                         <div class="mt-4 linkCont">
                             <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
-                                <font-awesome-icon icon="fa-solid fa-link" style="height: 17px; margin: 0!important;" />
+                                <font-awesome-icon icon="fa-solid fa-link" style="height: 14px; margin: 0!important;" />
                             </div>
                             <span class="linkSpan" >panel.e-mart.com.ar</span>
                         </div>
@@ -80,7 +80,7 @@
                     <a href="https://culturasativa.com.ar/" target="_blank" style="margin-bottom:18px; cursor:pointer;">
                         <div class="mt-4 linkCont">
                             <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
-                                <font-awesome-icon icon="fa-solid fa-link" style="height: 17px; margin: 0!important;" />
+                                <font-awesome-icon icon="fa-solid fa-link" style="height: 14px; margin: 0!important;" />
                             </div>
                             <span class="linkSpan" >culturasativa.com.ar</span>
                         </div>
@@ -146,7 +146,7 @@
 }
 
 .linkCont{
-    height: 42px;
+    height: 35px;
     border-radius: 50px;
     width: fit-content;
     padding: 0 5px;
@@ -174,7 +174,7 @@
     -o-transition: all ease-in-out .2s;
 }
 .linkCont .linkSpan{
-    font-size: 17px !important; 
+    font-size: 15px !important; 
     font-weight:500;
 }
 
@@ -203,7 +203,8 @@
 }
 .card{
     width: 48%;
-    height: 98%;
+    min-height: 676px;
+    height: fit-content;
     padding-bottom: 10px;
     border: 1px solid rgba(0, 0, 0, 0.247);
     border-radius: 12px;

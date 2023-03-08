@@ -69,8 +69,8 @@
     height:fit-content;
     border-radius: 50px;
     width: fit-content;
-    padding: 14px 25px;
-    padding-right: 30px;
+    padding: 17px 23px;
+    padding-right: 35px;
     display: flex;
     gap: 5px;
     align-items: center;
