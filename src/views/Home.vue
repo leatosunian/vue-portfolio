@@ -12,15 +12,16 @@
                     <a v-if="langg === 'es'" href="https://www.linkedin.com/in/leandrotosunian/" target="_blank" style="cursor:pointer;">
                         <div class="btnCont">
                             <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
-                                <font-awesome-icon icon="fa-brands fa-linkedin" style="height: 22px; margin: 0!important;" />
+                                <font-awesome-icon icon="fa-solid fa-download" style="height: 20px; margin: 0!important;" />
                             </div>
                             <p class="btnSpan" >Mi CV</p>
+                            
                         </div>
                     </a>
                     <a v-if="langg === 'en'" href="https://www.linkedin.com/in/leandrotosunian/" target="_blank" style="cursor:pointer;">
                         <div class="btnCont">
                             <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
-                                <font-awesome-icon icon="fa-brands fa-linkedin" style="height: 22px; margin: 0!important;" />
+                                <font-awesome-icon icon="fa-solid fa-download" style="height: 20px; margin: 0!important;" />
                             </div>
                             <p class="btnSpan" >My CV</p>
                         </div>
@@ -32,7 +33,7 @@
                     <router-link to="/contact" v-if="langg === 'es'" style=" cursor:pointer; ">
                         <div class="btnCont">
                             <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
-                                <font-awesome-icon icon="fa-brands fa-linkedin" style="height: 22px; margin: 0!important;" />
+                                <font-awesome-icon icon="fa-solid fa-message" style="height: 18px; margin: 0!important;" />
                             </div>
                             <p class="btnSpan" >Contactame</p>
                         </div>
@@ -40,7 +41,7 @@
                     <router-link to="/contact" v-if="langg === 'en'" style=" cursor:pointer; ">
                         <div class="btnCont">
                             <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
-                                <font-awesome-icon icon="fa-brands fa-linkedin" style="height: 22px; margin: 0!important;" />
+                                <font-awesome-icon icon="fa-solid fa-message" style="height: 18px; margin: 0!important;" />
                             </div>
                             <p class="btnSpan" >Contact me</p>
                         </div>
