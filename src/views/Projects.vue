@@ -40,7 +40,7 @@
                 </div>
                 <div class="detailsCont">
                     <span>eMart - Panel de administración</span>
-                    <p>Este es el panel de administración de la tienda, donde podrás: <b>agregar, modificar, desactivar o borrar los productos</b> y sus respectivas <b>fotos</b> que se muestran en la tienda; modificar los <b>costos de envío</b> y establecer un monto a partir del cual el <b>envío es gratis</b> (opcional); personalizar las <b>categorias y las subcategorias</b> en las que se clasifican los productos; <b>visualizar los pedidos</b> realizados en la tienda con los datos del cliente, del envio y de los productos de la compra. Luego de despachar los productos en el correo, se le envia el <b>código de seguimiento</b> al cliente para que pueda hacer el tracking de su pedido. En el <b>historial de pedidos</b> podés filtrar por dia o por período o buscar por número de orden.</p>
+                    <p>Este es el panel de administración de la tienda, donde podrás: <b>agregar, modificar, desactivar o borrar los productos</b> y sus respectivas <b>fotos</b> que se muestran en la tienda; modificar los <b>costos de envío</b> y el monto a partir del cual el <b>envío es gratis</b>; personalizar las <b>categorias y las subcategorias</b> en las que se clasifican los productos; <b>visualizar los pedidos</b> realizados en la tienda con los datos del cliente, del envio y de los productos de la compra. Al despachar los productos en el correo, se le envia el <b>código de seguimiento</b> al cliente para que pueda hacer el tracking de su pedido. En el <b>historial de pedidos</b> podés filtrar por dia, por período o buscar por número de orden.</p>
                     <div style="display:flex; align-items:end; gap:5px;" class="mt-2">
                         <p style="font-weight:500; font-size:15px; line-height:15px; margin-right:3px;" v-if="langg === 'en'">Made with: </p>
                         <p style="font-weight:500; font-size:15px; line-height:15px; margin-right:3px;" v-if="langg === 'es'">Desarrollado con: </p>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="detailsCont">
                     <span>Cultura Sativa Growshop - Catálogo</span>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, pariatur accusamus sapiente facere reprehenderit ipsa explicabo ipsum quo eum architecto? Voluptas nulla vero labore doloremque accusantium ab architecto iusto dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusamus unde deleniti illum earum, delectus quis nisi magni cumque necessitatibus dolorum aliquid! Saepe doloremque accusantium quod officia dolor hic Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ea reiciendis incidunt animi, recusandae consectetur maiores.</p>
+                    <p>Esta página web, la cual fue mi primer proyecto, es un catálogo de productos creada para una tienda de cultivo. A diferencia de mi proyecto de E-commerce, no es una Single Page Application y no posee base de datos.</p>
                     <div style="display:flex; align-items:end; gap:5px;" class="mt-2">
                         <p style="font-weight:500; font-size:15px; line-height:15px; margin-right:3px;" v-if="langg === 'en'">Made with: </p>
                         <p style="font-weight:500; font-size:15px; line-height:15px; margin-right:3px;" v-if="langg === 'es'">Desarrollado con: </p>
@@ -146,7 +146,7 @@
 }
 
 .linkCont{
-    height: 35px;
+    height: 34px!important;
     border-radius: 50px;
     width: fit-content;
     padding: 0 5px;
@@ -155,7 +155,7 @@
     gap: 5px;
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
     box-shadow: 8px 8px 15px rgba(94, 18, 182, 0.13);
     transition: all .2 ease-in-out;
     -webkit-transition: all ease-in-out .2s;
@@ -203,7 +203,6 @@
 }
 .card{
     width: 48%;
-    min-height: 676px;
     height: fit-content;
     padding-bottom: 10px;
     border: 1px solid rgba(0, 0, 0, 0.247);
@@ -277,7 +276,6 @@
         width: 100%;
         height: 58vh;
         min-height: 60vh;
-        padding: 30px;
         gap: 30px;
         overflow-y: scroll;
         display: flex;
@@ -297,7 +295,7 @@
         border: 1px solid rgba(197, 197, 197, 0.1);
     }
     .cardsContainer{
-        padding: 0px
+        padding: 0 4px;
     }
 
     .detailsCont span{
@@ -312,7 +310,9 @@
     .linkCont{
         height: 38px;
         border-radius: 50px;    
-        margin: 5px 0;    
+        margin: 5px 0; 
+        position: relative;
+        z-index: 9999;
     }
     .linkCont .linkSpan{
         font-size: 16px !important; 
