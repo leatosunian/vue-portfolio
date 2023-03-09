@@ -15,18 +15,18 @@
                     <span>eMart - Tienda online</span>
                     <p>Esta es la tienda online del proyecto eMart, la cual tiene: un <b>listado de los productos</b> y <b>filtros</b> para clasificarlos: por categoría y/o subcategoría, por las <b>variantes del producto</b>(ej. color, talle, modelo, etc.), de mayor a menor precio y viceversa) y un <b>carrito de compras</b> donde se agregan los productos que el cliente quiera comprar. El <b>pago</b> se realiza de manera <b>segura</b> mediante <b>Mercado Pago</b>. El cliente tiene en su perfil el <b>historial de sus compras</b> y los datos de cada una, donde se le enviará el <b>código de seguimiento</b> del correo y podrá consultar el estado del envío. Cada cliente se crea su propio perfil y <b>solamente</b> se podrá comprar si sos un <b>cliente registrado</b></p>
                     <div style="display:flex; align-items:end; gap:5px;" class="mt-2">
-                        <p style="font-weight:500; font-size:15px; line-height:15px; margin-right:3px;" v-if="langg === 'en'">Made with: </p>
-                        <p style="font-weight:500; font-size:15px; line-height:15px; margin-right:3px;" v-if="langg === 'es'">Desarrollado con: </p>
+                        <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'en'">Made with: </p>
+                        <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'es'">Desarrollado con: </p>
                         <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
                         <img src="@/assets/mongodblogo.png" title="MongoDB" style="width:23px; border-radius:6px;" alt="">
                         <img src="@/assets/express.png" title="Express JS" style="width:23px" alt="">
-                        <img src="@/assets/vue.png" title="Vue" style="width:23px" alt="">
-                        <img src="@/assets/nodejs.png" title="Node.js" style="width:20px" alt="">
+                        <img src="@/assets/vue.png" title="Vue" style="width:24px" alt="">
+                        <img src="@/assets/nodejs.png" title="Node.js" style="width:19px" alt="">
                     </div>
                     <a href="https://www.e-mart.com.ar/" target="_blank" style="margin-bottom:18px;  cursor:pointer;">
                         <div class="mt-4 linkCont">
-                            <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
-                                <font-awesome-icon icon="fa-solid fa-link" style="height: 14px; margin: 0!important;" />
+                            <div class="w-6 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
+                                <font-awesome-icon icon="fa-solid fa-link" style="height: 12px; margin: 0!important;" />
                             </div>
                             <span class="linkSpan" >e-mart.com.ar</span>
                         </div>
@@ -42,8 +42,8 @@
                     <span>eMart - Panel de administración</span>
                     <p>Este es el panel de administración de la tienda, donde podrás: <b>agregar, modificar, desactivar o borrar los productos</b> y sus respectivas <b>fotos</b> que se muestran en la tienda; modificar los <b>costos de envío</b> y el monto a partir del cual el <b>envío es gratis</b>; personalizar las <b>categorias y las subcategorias</b> en las que se clasifican los productos; <b>visualizar los pedidos</b> realizados en la tienda con los datos del cliente, del envio y de los productos de la compra. Al despachar los productos en el correo, se le envia el <b>código de seguimiento</b> al cliente para que pueda hacer el tracking de su pedido. En el <b>historial de pedidos</b> podés filtrar por dia, por período o buscar por número de orden.</p>
                     <div style="display:flex; align-items:end; gap:5px;" class="mt-2">
-                        <p style="font-weight:500; font-size:15px; line-height:15px; margin-right:3px;" v-if="langg === 'en'">Made with: </p>
-                        <p style="font-weight:500; font-size:15px; line-height:15px; margin-right:3px;" v-if="langg === 'es'">Desarrollado con: </p>
+                        <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'en'">Made with: </p>
+                        <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'es'">Desarrollado con: </p>
                         <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
                         <img src="@/assets/mongodblogo.png" title="MongoDB" style="width:23px; border-radius:6px;" alt="">
                         <img src="@/assets/express.png" title="Express JS" style="width:23px" alt="">
@@ -52,8 +52,8 @@
                     </div>
                     <a href="https://www.panel.e-mart.com.ar/" target="_blank" style="margin-bottom:18px; cursor:pointer;">
                         <div class="mt-4 linkCont">
-                            <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
-                                <font-awesome-icon icon="fa-solid fa-link" style="height: 14px; margin: 0!important;" />
+                            <div class="w-6 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
+                                <font-awesome-icon icon="fa-solid fa-link" style="height: 12px; margin: 0!important;" />
                             </div>
                             <span class="linkSpan" >panel.e-mart.com.ar</span>
                         </div>
@@ -68,19 +68,19 @@
                 </div>
                 <div class="detailsCont">
                     <span>Cultura Sativa Growshop - Catálogo</span>
-                    <p>Esta página web, la cual fue mi primer proyecto, es un catálogo de productos creada para una tienda de cultivo. A diferencia de mi proyecto de E-commerce, no es una Single Page Application y no posee base de datos.</p>
+                    <p>Esta página web, la cual fue mi primer proyecto, es un catálogo de productos creada para una tienda de cultivo. A pedido del cliente, se realizó el catálogo dividido en cuatro categorías y una sección de contacto donde se encuentran accesos directos a las redes sociales, ubicación y mas información sobre la tienda fisica. El diseño de la página es responsivo, se adapta tanto a celular, como a tablets y PC. </p>
                     <div style="display:flex; align-items:end; gap:5px;" class="mt-2">
-                        <p style="font-weight:500; font-size:15px; line-height:15px; margin-right:3px;" v-if="langg === 'en'">Made with: </p>
-                        <p style="font-weight:500; font-size:15px; line-height:15px; margin-right:3px;" v-if="langg === 'es'">Desarrollado con: </p>
+                        <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'en'">Made with: </p>
+                        <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'es'">Desarrollado con: </p>
                         <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
-                        <img src="@/assets/html.png" title="HTML5" style="width:23px; border-radius:6px;" alt="">
-                        <img src="@/assets/css.png" title="CSS3" style="width:23px" alt="">
-                        <img src="@/assets/js.png" title="JavaScript" style="width:23px" alt="">
+                        <img src="@/assets/html.png" title="HTML5" style="width:20px; border-radius:6px;" alt="">
+                        <img src="@/assets/css.png" title="CSS3" style="width:20px" alt="">
+                        <img src="@/assets/js.png" title="JavaScript" style="width:20px" alt="">
                     </div>  
                     <a href="https://culturasativa.com.ar/" target="_blank" style="margin-bottom:18px; cursor:pointer;">
                         <div class="mt-4 linkCont">
-                            <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
-                                <font-awesome-icon icon="fa-solid fa-link" style="height: 14px; margin: 0!important;" />
+                            <div class="w-6 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
+                                <font-awesome-icon icon="fa-solid fa-link" style="height: 12px; margin: 0!important;" />
                             </div>
                             <span class="linkSpan" >culturasativa.com.ar</span>
                         </div>
@@ -205,7 +205,7 @@
     width: 48%;
     height: fit-content;
     padding-bottom: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.247);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     backdrop-filter: blur(5px);
     background: transparent;
@@ -315,7 +315,7 @@
         z-index: 9999;
     }
     .linkCont .linkSpan{
-        font-size: 16px !important; 
+        font-size: 13px !important; 
         font-weight:500;
     }
     

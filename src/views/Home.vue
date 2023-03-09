@@ -170,10 +170,10 @@
         font-weight:500;
     }
     .btnCont{
-        height: 42px;
+        height: 54px;
         border-radius: 50px;
         width: fit-content;
-        padding: 0 5px;
+        padding: 0 7px;
         padding-right: 15px;
         display: flex;
         gap: 5px;
