@@ -226,16 +226,18 @@ export default {
     },
     props:{
         darkMode: null,
-        langg: 'en'
+        langg: 'es'
     },
     data(){
         return {
-            lang: 'en',
+            lang: 'es',
             modo: null
         }
     },
     beforeMount(){
+        localStorage.setItem('port_lang', this.lang)
         this.lang = localStorage.getItem('port_lang')
+
     },
 
 }

@@ -123,7 +123,7 @@ export default {
     },
     beforeMount(){
       this.darkMode = JSON.parse(localStorage.getItem('port_darkmode')) 
-      this.lang = 'en'
+      this.lang = 'es'
     },
     methods: {
       toHome(){
@@ -139,31 +139,18 @@ export default {
           return this.$emit('getLang', this.lang)
         }
       },
-        toggleMode(){
-          if(this.darkMode == true){
-            this.darkMode = false
-            return this.$emit('getMode', this.darkMode)
-            
-          } 
-          if(!this.darkMode) {
-            this.darkMode = true
-            return this.$emit('getMode', this.darkMode)
-            
-          }
-        },
-        toggleNav(){
-            const hamburguer = document.querySelector('.hamburguer')
-            const navMenu = document.querySelector('.nav-menu')
-
-            if(hamburguer.classList.contains('active')){
-                hamburguer.classList.remove('active')
-                navMenu.classList.remove('active')
-                return
-            }
-
-            hamburguer.classList.toggle('active')
-            navMenu.classList.toggle('active')
+      toggleMode(){
+        if(this.darkMode == true){
+          this.darkMode = false
+          return this.$emit('getMode', this.darkMode)
+          
+        } 
+        if(!this.darkMode) {
+          this.darkMode = true
+          return this.$emit('getMode', this.darkMode)
+          
         }
+      },
     }
 }
 </script>

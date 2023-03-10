@@ -174,8 +174,10 @@
     -o-transition: all ease-in-out .2s;
 }
 .linkCont .linkSpan{
-    font-size: 15px !important; 
+    font-size: 14px !important; 
     font-weight:500;
+    line-height: 14px;
+
 }
 
 .main-container-top-projects{
@@ -317,6 +319,7 @@
     .linkCont .linkSpan{
         font-size: 13px !important; 
         font-weight:500;
+        line-height: 13px;
     }
     
 }

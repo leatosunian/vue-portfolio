@@ -10,38 +10,38 @@
             <span class="font-semibold reverse-text" v-if="langg === 'es'" >escribime en mis redes sociales:</span>
             
             <a href="https://www.linkedin.com/in/leandrotosunian/" target="_blank" style="margin-bottom:18px; cursor:pointer; margin-top:40px">
-                <div class="linkCont">
+                <div class="linkContContact">
                     <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
                         <font-awesome-icon icon="fa-brands fa-linkedin" style="height: 22px; margin: 0!important;" />
                     </div>
-                    <span class="linkSpan" >linkedin.com/in/leandrotosunian</span>
+                    <span class="linkSpanContact" >linkedin.com/in/leandrotosunian</span>
                 </div>
             </a>
 
             <a href="#" style="margin-bottom:18px; cursor:pointer;">
-                <div class="linkCont">
+                <div class="linkContContact">
                     <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
                         <font-awesome-icon icon="fa-solid fa-envelope" style="height: 20px; margin: 0!important;"/>
                     </div>
-                    <span class="linkSpan" >leandrotosunian@hotmail.com</span>
+                    <span class="linkSpanContact" >leandrotosunian@hotmail.com</span>
                 </div>
             </a>
 
             <a href="https://github.com/leatosunian" target="_blank" style="margin-bottom:18px; cursor:pointer;">
-                <div class="linkCont">
+                <div class="linkContContact">
                     <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
                         <font-awesome-icon icon="fa-brands fa-square-github" style="height: 22px; margin: 0!important;"/>
                     </div>
-                    <span class="linkSpan" >github.com/leatosunian</span>
+                    <span class="linkSpanContact" >github.com/leatosunian</span>
                 </div>
             </a>
 
             <a href="https://api.whatsapp.com/send?phone=5492235423025" target="_blank" style="margin-bottom:18px; cursor:pointer;">
-                <div class="linkCont">
+                <div class="linkContContact">
                     <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
                         <font-awesome-icon icon="fa-brands fa-square-whatsapp" style="height: 22px; margin: 0!important;"/>
                     </div>
-                    <span class="linkSpan" >+54 0223-5423025</span>
+                    <span class="linkSpanContact" >+54 0223-5423025</span>
                 </div>
             </a>
         </div>
@@ -64,7 +64,7 @@
 </template>
 
 <style>
-.linkCont{
+.linkContContact{
     height: 42px;
     border-radius: 50px;
     width: fit-content;
@@ -84,7 +84,7 @@
     
 }
 
-.linkCont:hover{
+.linkContContact:hover{
     box-shadow: 0px 0px 0px rgba(94, 18, 182, 0.25);
     border-color: rgba(94, 18, 182, .6);
     transition: all .2 ease-in-out;
@@ -126,8 +126,8 @@
     margin-top:20px;
 }
 
-.linkSpan{
-    font-size:21px!important; 
+.linkSpanContact{
+    font-size:18px!important; 
     font-weight:500;
 }
 
@@ -135,7 +135,7 @@
 
 @media (max-width: 768px){
 
-    .linkSpan{
+    .linkSpanContact{
         font-size:18px!important; 
         font-weight:500;
     }
@@ -166,7 +166,7 @@
         align-self: flex-start!important; 
         margin-top:20px;
     }
-    .linkCont{
+    .linkContContact{
         height: 42px;
         border-radius: 50px;
         width: fit-content;

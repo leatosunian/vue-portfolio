@@ -10,10 +10,13 @@
                 <h3 class="titles" v-if="langg === 'es'">Sobre mi</h3>
                 <h3 class="titles" v-if="langg === 'en'">About me</h3>
                 <p class="mb-4"><img src="@/assets/mypic.jpg" alt="" class="picContMobile">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit nulla asperiores beatae animi magnam voluptatibus enim iusto ipsa deserunt ducimus itaque accusamus in quod explicabo nihil voluptatum atque, magni, dolore reiciendis obcaecati qui, inventore eligendi provident. Ex, sunt repellat. Iste.
+                    Soy Leandro Tosunian, tengo 22 años, soy un desarrollador web Full Stack autodidacta. Comencé mis estudios en abril de 2022 con un curso de HTML, CSS y JS. Desde entonces, disfruto de crear páginas web y aplicaciones responsive, las cuales me gusta desarrollar tanto el backend como el frontend y lograr brindarle al usuario una buena experiencia al utilizarlas. Actualmente me encuentro trabajando como freelancer, y en constante aprendizaje, desarrollando nuevos conocimientos y perfeccionandome en las tecnologías que utilizo.
                 </p>
+                <h3 class="titles" v-if="langg === 'es'">Mis estudios</h3>
+                <h3 class="titles" v-if="langg === 'en'">Education</h3>
                 <p class="mb-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eum, repellendus velit et magni quos cumque? Perferendis provident tempora, fugiat ex quasi, nihil rerum tempore eaque illo ea repellat sit!
+                    En cuanto a mi formación como desarrollador, comencé a estudiar con un curso de Programación en HTML, CSS y JavaScript en el Centro de Capacitación UCIP, Buenos Aires, Mar del Plata
+                    Luego, comencé otro <a href="https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/?kw=javasc&src=sac" target="_blank">curso de JavaScript</a>  
                 </p>
                 <h3 class="titles" v-if="langg === 'es'">Mis conocimientos</h3>
                 <h3 class="titles" v-if="langg === 'en'">Knowledge</h3>
@@ -96,7 +99,7 @@ h3{
 }
 
 .titles{
-    font-size: 24px;
+    font-size: 21px !important;    
 }
 
 .picCont img{

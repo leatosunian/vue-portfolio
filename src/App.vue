@@ -73,7 +73,7 @@
     data(){
       return {
         darkMode: false,
-        lang: 'en'
+        lang: 'es'
       }
     },
     methods:{
