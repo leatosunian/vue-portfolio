@@ -14,23 +14,75 @@
                 </p>
                 <h3 class="titles" v-if="langg === 'es'">Mis estudios</h3>
                 <h3 class="titles" v-if="langg === 'en'">Education</h3>
-                <p class="mb-4">
-                    En cuanto a mi formación como desarrollador, comencé a estudiar con un curso de Programación en HTML, CSS y JavaScript en el Centro de Capacitación UCIP, Buenos Aires, Mar del Plata
-                    Luego, comencé otro <a href="https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/?kw=javasc&src=sac" target="_blank">curso de JavaScript</a>  
-                </p>
-                <h3 class="titles" v-if="langg === 'es'">Mis conocimientos</h3>
-                <h3 class="titles" v-if="langg === 'en'">Knowledge</h3>
-                <p class="mb-5">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit nulla asperiores beatae animi magnam voluptatibus enim iusto ipsa deserunt ducimus itaque accusamus in quod explicabo nihil voluptatum atque, magni, dolore reiciendis obcaecati qui, inventore eligendi provident. Ex, sunt repellat. Iste.
-                </p>
-            </div>
 
+                <div class="eduMainCont">
+                    <div class="educationCont">
+                        <div class="courseCont">
+                            <small style="font-weight:400; margin-bottom">UCIP - Capacitación, Mar del Plata</small>
+                            <small style="font-size:10px; margin-bottom:3px;">Abril 2022 - Julio 2022</small>
+                            <p class="font-semibold text-center">
+                                Programación en HTML, CSS y JavaScript
+                            </p>
+                        </div>
+                        <div class="certBtnCont" >
+                            <font-awesome-icon icon="fa-solid fa-download" style="height: 17px; margin: 0!important;" />
+                            <button >Descargar Certificado</button>
+                        </div>
+                    </div>
+    
+                    <div class="educationCont">
+                        <div class="courseCont">
+                            <small style="font-weight:400; margin-bottom">Udemy</small>
+                            <small style="font-size:10px; margin-bottom:3px;">Junio 2022 - Actualidad</small>
+                            <p class="font-semibold text-center">
+                                <a href="https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/?kw=javasc&src=sac" target="_blank">Curso de JavaScript Full Stack MERN/MEVN</a>
+                            </p>
+                        </div>
+                        <div class="certBtnCont" >
+                            <font-awesome-icon icon="fa-solid fa-download" style="height: 17px; margin: 0!important;" />
+                            <button >Descargar Certificado</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="titles" style="margin-top: 20px;" v-if="langg === 'es'">Mis conocimientos</h3>
+                <h3 class="titles" style="margin-top: 20px;" v-if="langg === 'en'">Knowledge</h3>
+                
+                <div class="kCont">
+                    <div style="border:1px solid rgba(255, 255, 255, 0.027); border-radius:15px; padding:11px 15px;">
+                        <div class="kTitle">
+                            <font-awesome-icon class="arrowR" icon="fa-solid fa-angle-right" />
+                            <p>Lenguajes</p> 
+                        </div>
+                        <div>
+                            <p style="font-size: 13px;">HTML5 | CSS3 | JavaScript</p>
+                        </div>
+                    </div>
+                    <div style="border:1px solid rgba(255, 255, 255, 0.027); border-radius:15px; padding:11px 15px;">
+                        <div class="kTitle">
+                            <font-awesome-icon class="arrowR" icon="fa-solid fa-angle-right"  />
+                            <p>Frameworks, librerias y DB</p> 
+                        </div>
+                        <div>
+                            <p style="font-size: 13px;">Node.js | Express | Vue | MongoDB | Tailwind | Bootstrap | JWT | Socket.io </p>
+                        </div>
+                    </div>
+                    <div style="border:1px solid rgba(255, 255, 255, 0.027); border-radius:15px; padding:11px 15px;">
+                        <div class="kTitle">
+                            <font-awesome-icon class="arrowR" icon="fa-solid fa-angle-right" />
+                            <p>Herramientas</p> 
+                        </div>
+                        <div>
+                            <p style="font-size: 13px;">Postman | MongoDB Compass | GitHub</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- <span v-if="langg === 'en'" class="font-semibold" style="margin-bottom:16px;">Welcome all!, I'm</span>
             <span v-if="langg === 'es'" class="font-semibold" style="margin-bottom:16px;">¡Hola!, me llamo</span>
             <h1 class="font-bold ">Leandro Tosunian</h1>
             <span class="font-semibold reverse-text" v-if="langg === 'en'" >a freelancer Full Stack Web Developer</span>
             <span class="font-semibold reverse-text" v-if="langg === 'es'" >soy desarrollador web Full Stack</span> -->
-
         </div>
         <div class="router-nav">
             <div class="flex align-items-center h-fit router-nav-link">
@@ -52,7 +104,61 @@
 </template>
 
 <style>
+.eduMainCont{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.kCont{
+    position: relative;
+    display:flex;
+    width:100%; 
+    height:fit-content;
+    flex-direction: row;
+    gap: 10px;
+}
+.kTitle p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+}
+.kTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 4px;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 2px;
+}
 
+.certBtnCont{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    padding: 12px 5px;
+    justify-content: center;
+    align-items: center;
+}
+.educationCont {
+    display:flex; 
+    width:fit-content;
+    height:fit-content; 
+    border:1px solid rgba(255, 255, 255, 0.027); 
+    border-radius:15px;
+}
+.courseCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px  ;
+    border-right: 1px solid rgba(255, 255, 255, 0.027);
+}
 
 h3{
     font-size: 27px!important;
@@ -82,7 +188,7 @@ h3{
     padding: 3%;
     gap: 50px;
     align-items: center;
-    max-width: 70vw;
+    max-width: 75vw;
     width: fit-content;
     height: fit-content;
     border: 1px solid rgba(129, 129, 129, 0) ;
@@ -118,8 +224,48 @@ h3{
     display: none;
 }
 
-@media (max-width: 768px){
+.arrowR{
+    height: 13px; 
+    color:rgb(79, 15, 153);
+    margin-right: 3px;
+}
 
+@media (max-width: 768px){
+    .eduMainCont{
+        flex-direction: column;
+    }
+    .kTitle p {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .arrowR{
+        margin: 0;
+        margin-right: 3px;
+    }
+    .kCont{
+        position: relative;
+        display:flex;
+        width:100%; 
+        height:fit-content;
+        flex-direction: column;
+    }
+    .certBtnCont{
+        display: flex;
+        flex-direction: row;
+        gap: 13px;
+        padding: 12px 16px;
+        justify-content: center;
+        align-items: center;
+    }
+    .educationCont{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .courseCont{
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.027); 
+    }
     .titles{
         font-size: 24px !important;
     }
