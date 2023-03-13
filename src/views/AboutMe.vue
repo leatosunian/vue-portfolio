@@ -153,7 +153,7 @@
     border:1px solid rgba(255, 255, 255, 0.027); 
     border-radius:15px; 
     padding:11px 15px;
-    box-shadow: 8px 8px 15px rgb(94 18 182 / 13%);
+    box-shadow: 8px 8px 15px rgb(94 18 182 / 11%);
 }
 
 .certBtnCont{
