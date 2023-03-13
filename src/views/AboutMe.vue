@@ -22,7 +22,8 @@
                     <div class="educationCont" >
                         <div class="courseCont">
                             <small style="font-weight:400; margin-bottom">UCIP - Capacitación, Mar del Plata</small>
-                            <small style="font-size:10px; margin-bottom:3px;">Abril 2022 - Julio 2022</small>
+                            <small v-if="langg === 'es'" style="font-size:10px; margin-bottom:3px;">Abril 2022 - Julio 2022</small>
+                            <small v-if="langg === 'en'" style="font-size:10px; margin-bottom:3px;">April 2022 - July 2022</small>
                             <p v-if="langg === 'es'" class="font-semibold text-center">
                                 Programación en HTML, CSS y JavaScript
                             </p>
@@ -40,7 +41,8 @@
                     <div class="educationCont">
                         <div class="courseCont">
                             <small style="font-weight:400; margin-bottom">Udemy</small>
-                            <small style="font-size:10px; margin-bottom:3px;">Junio 2022 - Actualidad</small>
+                            <small v-if="langg === 'es'"  style="font-size:10px; margin-bottom:3px;">Junio 2022 - Actualidad</small>
+                            <small v-if="langg === 'en'"  style="font-size:10px; margin-bottom:3px;">June 2022 - Today</small>
                             <p v-if="langg === 'es'" class="font-semibold text-center">
                                 <a href="https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/?kw=javasc&src=sac" target="_blank">Curso de JavaScript Full Stack MERN/MEVN</a>
                             </p>
