@@ -9,24 +9,31 @@
             <div>
                 <h3 class="titles" v-if="langg === 'es'">Sobre mi</h3>
                 <h3 class="titles" v-if="langg === 'en'">About me</h3>
-                <p class="mb-4"><img src="@/assets/mypic.jpg" alt="" class="picContMobile">
-                    Soy Leandro Tosunian, tengo 22 años, soy un desarrollador web Full Stack autodidacta. Comencé mis estudios en abril de 2022 con un curso de HTML, CSS y JS. Desde entonces, disfruto de crear páginas web y aplicaciones responsive, las cuales me gusta desarrollar tanto el backend como el frontend y lograr brindarle al usuario una buena experiencia al utilizarlas. Actualmente me encuentro trabajando como freelancer, y en constante aprendizaje, desarrollando nuevos conocimientos y perfeccionandome en las tecnologías que utilizo.
+                <p v-if="langg === 'es'" class="mb-4"><img src="@/assets/mypic.jpg" alt="" class="picContMobile">
+                    Soy Leandro Tosunian, tengo 22 años, soy un desarrollador web Full Stack autodidacta actualmente en Mar del Plata, Argentina. Comencé mis estudios en abril de 2022 con un curso de HTML, CSS y JS. Desde entonces, disfruto de crear páginas web y aplicaciones responsive, las cuales me gusta desarrollar tanto el backend como el frontend y lograr brindarle al usuario una buena experiencia al utilizarlas. Actualmente me encuentro trabajando como freelancer, y en constante aprendizaje, desarrollando nuevos conocimientos y perfeccionandome en las tecnologías que utilizo.
+                </p>
+                <p v-if="langg === 'en'" class="mb-4"><img src="@/assets/mypic.jpg" alt="" class="picContMobile">
+                    I'm Leandro Tosunian, a 22 year-old self-taught Full Stack web developer. I started learning to code in April 2022 on an HTML, CSS and JS course, since then I started to love coding so I began teaching myself how to code. I enjoy developing responsive web apps and pages that bring users a good looking interface with a nice user experience. Nowadays I work by myself meanwhile I'm developing new skills and improving on the technologies I use.
                 </p>
                 <h3 class="titles" v-if="langg === 'es'">Mis estudios</h3>
                 <h3 class="titles" v-if="langg === 'en'">Education</h3>
 
                 <div class="eduMainCont">
-                    <div class="educationCont">
+                    <div class="educationCont" >
                         <div class="courseCont">
                             <small style="font-weight:400; margin-bottom">UCIP - Capacitación, Mar del Plata</small>
                             <small style="font-size:10px; margin-bottom:3px;">Abril 2022 - Julio 2022</small>
-                            <p class="font-semibold text-center">
+                            <p v-if="langg === 'es'" class="font-semibold text-center">
                                 Programación en HTML, CSS y JavaScript
+                            </p>
+                            <p v-if="langg === 'en'" class="font-semibold text-center">
+                                Web development in HTML, CSS and JavaScript
                             </p>
                         </div>
                         <div class="certBtnCont" >
                             <font-awesome-icon icon="fa-solid fa-download" style="height: 17px; margin: 0!important;" />
-                            <button >Descargar Certificado</button>
+                            <button v-if="langg === 'es'">Descargar Certificado</button>
+                            <button v-if="langg === 'en'">Download Certificate</button>
                         </div>
                     </div>
     
@@ -34,13 +41,17 @@
                         <div class="courseCont">
                             <small style="font-weight:400; margin-bottom">Udemy</small>
                             <small style="font-size:10px; margin-bottom:3px;">Junio 2022 - Actualidad</small>
-                            <p class="font-semibold text-center">
+                            <p v-if="langg === 'es'" class="font-semibold text-center">
                                 <a href="https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/?kw=javasc&src=sac" target="_blank">Curso de JavaScript Full Stack MERN/MEVN</a>
+                            </p>
+                            <p v-if="langg === 'en'" class="font-semibold text-center">
+                                <a href="https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/?kw=javasc&src=sac" target="_blank">JavaScript Full Stack MERN/MEVN Course</a>
                             </p>
                         </div>
                         <div class="certBtnCont" >
                             <font-awesome-icon icon="fa-solid fa-download" style="height: 17px; margin: 0!important;" />
-                            <button >Descargar Certificado</button>
+                            <button v-if="langg === 'es'">Descargar Certificado</button>
+                            <button v-if="langg === 'en'">Download Certificate</button>
                         </div>
                     </div>
                 </div>
@@ -49,28 +60,31 @@
                 <h3 class="titles" style="margin-top: 20px;" v-if="langg === 'en'">Knowledge</h3>
                 
                 <div class="kCont">
-                    <div style="border:1px solid rgba(255, 255, 255, 0.027); border-radius:15px; padding:11px 15px;">
+                    <div class="kBox">
                         <div class="kTitle">
                             <font-awesome-icon class="arrowR" icon="fa-solid fa-angle-right" />
-                            <p>Lenguajes</p> 
+                            <p v-if="langg === 'es'">Lenguajes</p> 
+                            <p v-if="langg === 'en'">Languages</p>
                         </div>
                         <div>
                             <p style="font-size: 13px;">HTML5 | CSS3 | JavaScript</p>
                         </div>
                     </div>
-                    <div style="border:1px solid rgba(255, 255, 255, 0.027); border-radius:15px; padding:11px 15px;">
+                    <div class="kBox">
                         <div class="kTitle">
                             <font-awesome-icon class="arrowR" icon="fa-solid fa-angle-right"  />
-                            <p>Frameworks, librerias y DB</p> 
+                            <p v-if="langg === 'es'">Frameworks, librerias y bases de datos</p> 
+                            <p v-if="langg === 'en'">Frameworks, libraries and databases</p> 
                         </div>
                         <div>
                             <p style="font-size: 13px;">Node.js | Express | Vue | MongoDB | Tailwind | Bootstrap | JWT | Socket.io </p>
                         </div>
                     </div>
-                    <div style="border:1px solid rgba(255, 255, 255, 0.027); border-radius:15px; padding:11px 15px;">
+                    <div class="kBox">
                         <div class="kTitle">
                             <font-awesome-icon class="arrowR" icon="fa-solid fa-angle-right" />
-                            <p>Herramientas</p> 
+                            <p v-if="langg === 'es'">Herramientas</p>
+                            <p v-if="langg === 'en'">Tools</p>
                         </div>
                         <div>
                             <p style="font-size: 13px;">Postman | MongoDB Compass | GitHub</p>
@@ -133,12 +147,18 @@
     margin-bottom: 5px;
     margin-top: 2px;
 }
+.kBox{
+    border:1px solid rgba(255, 255, 255, 0.027); 
+    border-radius:15px; 
+    padding:11px 15px;
+    box-shadow: 8px 8px 15px rgb(94 18 182 / 13%);
+}
 
 .certBtnCont{
     display: flex;
     flex-direction: column-reverse;
     gap: 8px;
-    padding: 12px 5px;
+    padding: 12px 10px;
     justify-content: center;
     align-items: center;
 }
@@ -147,6 +167,7 @@
     width:fit-content;
     height:fit-content; 
     border:1px solid rgba(255, 255, 255, 0.027); 
+    box-shadow: 8px 8px 15px rgb(94 18 182 / 13%);
     border-radius:15px;
 }
 .courseCont{
@@ -157,7 +178,7 @@
     width: fit-content;
     height: fit-content;
     padding: 10px 20px  ;
-    border-right: 1px solid rgba(255, 255, 255, 0.027);
+    border-right: 1px solid rgb(94 18 182 / 13%) ;
 }
 
 h3{

@@ -145,7 +145,6 @@ nav img {
     -o-transition: all .3s ease-in-out;
 }
 
-
 .light{
     background-color: white;
     color: #0e1013;
@@ -155,6 +154,8 @@ nav img {
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
 }
+
+
 
 h1{
     color: transparent !important;
