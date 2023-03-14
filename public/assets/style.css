@@ -167,10 +167,48 @@ h1{
     z-index: 1000;
     position: relative;
     /* background: linear-gradient(109.5deg, rgb(72, 203, 217) 11.2%, rgb(135, 218, 149) 91.1%); */
-    background: linear-gradient(91.7deg, rgb(79, 15, 153) -4.3%, rgb(122, 101, 149) 101.8%);
+    /* background: linear-gradient(91.7deg, rgb(79, 15, 153) -4.3%, rgb(122, 101, 149) 101.8%); */
+    background: linear-gradient(91.7deg, rgb(79, 15, 153) -4.3%, rgb(60, 6, 131) 101.8%); 
     background-clip: text;
     -webkit-background-clip: text;
 }
+
+
+.notificationContainer{
+    position: absolute;
+    z-index: 99999;
+    height: fit-content;
+    max-width: fit-content;
+    min-width: 300px;
+    padding: 14px 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 1px solid rgba(80, 80, 80, 0.1);
+    backdrop-filter: blur(8px);
+    box-shadow: 8px 8px 15px rgba(94, 18, 182, 0.13);
+    border-radius: 8px;
+    top: -400px;
+    transition:all ease-in-out .3s;
+    -webkit-transition:all ease-in-out .3s;
+    -moz-transition:all ease-in-out .3s;
+    -ms-transition:all ease-in-out .3s;
+    -o-transition:all ease-in-out .3s;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+}
+
+.actived{
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition:all ease-in-out .3s;
+} 
 
 
 /* dark mode background */

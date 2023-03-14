@@ -1,6 +1,14 @@
 <template>
 
     <div :class="[ {'dark': darkMode} , 'main-container-top']" >
+        <div class="notificationContainer" v-bind:class=" {actived: added} ">
+            <div style="display:flex; justify-content:center; height:70%; align-items:center; gap:12px">
+              <!-- <img src="@/assets/correct.png" alt="" style="width:35px;"> -->
+              <font-awesome-icon style="color:rgb(60, 6, 131);" icon="fa-solid fa-copy" />
+              <span v-if="langg === 'es'">Copiado al portapapeles</span>
+              <span v-if="langg === 'en'">Copied to clipboard</span>
+            </div>
+        </div>
         <div class="titleCont">
             <span v-if="langg === 'en'" class="font-semibold" style="margin-bottom:16px;">Let's get in</span>
             <span v-if="langg === 'es'" class="font-semibold" style="margin-bottom:16px;">¡Pongámonos en </span>
@@ -18,7 +26,7 @@
                 </div>
             </a>
 
-            <a href="#" style="margin-bottom:18px; cursor:pointer;">
+            <a href="#" style="margin-bottom:18px; cursor:pointer;" @click="copy()">
                 <div class="linkContContact">
                     <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
                         <font-awesome-icon icon="fa-solid fa-envelope" style="height: 20px; margin: 0!important;"/>
@@ -194,19 +202,30 @@ export default {
     },
     props:{
         darkMode: null,
-        langg: 'en'
+        langg: 'en',
+        
     },
     data(){
         return {
-            lang: 'en'
+            lang: 'en',
+            email: 'leandrotosunian@hotmail.com',
+            added: false
         }
     },
     beforeMount(){
         this.lang = localStorage.getItem('port_lang')
-        console.log(this.lang);
     },
     methods: {
-
+        copy(){
+            try {
+                navigator.clipboard.writeText(this.email)
+                this.added = true
+                setTimeout(() => {
+                    this.added = false
+                }, 3000);
+            } catch (error) {
+            }
+        }
     }
 }
 </script>
