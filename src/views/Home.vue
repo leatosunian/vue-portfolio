@@ -86,6 +86,7 @@
 }
 .btnCont:hover{
     box-shadow: 0px 0px 0px rgba(94, 18, 182, 0.25);
+    transform:scale(1.02);
     border-color: rgba(94, 18, 182, .6);
     transition: all .2 ease-in-out;
     -webkit-transition: all ease-in-out .2s;
