@@ -117,6 +117,7 @@
 .main-container-top{
     height: 80vh;    
     padding: 0 10%;
+    padding-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -198,7 +199,8 @@
     }
     .main-container-top{
         height: fit-content;    
-        padding: 40px 10%;
+        padding: 0 10%;
+        padding-top: 70px!important;
         display: flex;
         flex-direction: column;
         align-items: center;
