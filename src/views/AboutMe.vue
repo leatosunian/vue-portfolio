@@ -31,11 +31,11 @@
                                 Web development in HTML, CSS and JavaScript
                             </p>
                         </div>
-                        <div class="certBtnCont" >
+                        <a class="cursor-pointer certBtnCont" href="https://drive.google.com/file/d/10MVpqmaJ5-_z1ne3Ow-sxpSc3nrNCQoY/view?usp=share_link" target="_blank" >
                             <font-awesome-icon icon="fa-solid fa-download" style="height: 17px; margin: 0!important;" />
                             <button v-if="langg === 'es'">Descargar Certificado</button>
                             <button v-if="langg === 'en'">Download Certificate</button>
-                        </div>
+                        </a>
                     </div>
     
                     <div class="educationCont">
@@ -50,11 +50,11 @@
                                 <a href="https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/?kw=javasc&src=sac" target="_blank">JavaScript Full Stack MERN/MEVN Course</a>
                             </p>
                         </div>
-                        <div class="certBtnCont" >
+                        <a class="cursor-pointer certBtnCont" href="https://drive.google.com/file/d/1ZtkcU0WsRbd0nC97-q_SQXn1U8NzpafT/view?usp=sharing" target="_blank" >
                             <font-awesome-icon icon="fa-solid fa-download" style="height: 17px; margin: 0!important;" />
                             <button v-if="langg === 'es'">Descargar Certificado</button>
                             <button v-if="langg === 'en'">Download Certificate</button>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
