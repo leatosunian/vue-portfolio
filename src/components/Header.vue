@@ -2,8 +2,8 @@
     <div>
         <nav id="nav" :class="{'darkbar': darkMode} " style="z-index:999999;">
             <div class="container flex">
-              <img v-on:click="toHome()" style="cursor:pointer;" v-if="!darkMode" src="@/assets/lt1b.png" />
-              <img v-on:click="toHome()" style="cursor:pointer;" v-if="darkMode" src="@/assets/lt1w.png" />
+              <img v-on:click="toHome()" style="cursor:pointer;" v-if="!darkMode" src="@/assets/lt1b.svg" />
+              <img v-on:click="toHome()" style="cursor:pointer;" v-if="darkMode" src="@/assets/lt1w.svg" />
               <template v-if="lang === 'es'">
                 <div class="links">
                   <router-link to="/aboutme">Sobre mi</router-link>
