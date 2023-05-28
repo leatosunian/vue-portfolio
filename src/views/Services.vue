@@ -11,7 +11,7 @@
             
                 <div class="detailsCont">
                     <span style="align-self:center; margin-top: 20px;">Tienda online - Plataforma E-Mart</span>
-                    <p style="align-self:center; margin-bottom: 20px; text-align:center;">Expandí tu marca y tus ventas con una tienda online creada a tu gusto</p>
+                    <p style="align-self:center; margin-bottom: 20px; text-align:center;">Expandí tu marca y tus ventas con una tienda online creada a tu gusto.</p>
                     <!-- <p>Caracteristicas</p> -->
                     <div class="details">
                         <div class="mt-4 detailCont" style="margin-bottom:18px; cursor:pointer;">

@@ -56,8 +56,8 @@
         <div class="router-nav">
             <div class="flex align-items-center h-fit router-nav-link">
                 <font-awesome-icon style="width:12px; margin: 0 !important; margin-right:8px!important;" icon="fa-solid fa-arrow-left" />
-                <router-link v-if="langg=== 'es'" to="/projects" >Proyectos</router-link>
-                <router-link v-if="langg=== 'en'" to="/projects" >Projects</router-link>
+                <router-link v-if="langg=== 'en'" to="/services" >Services</router-link>
+                <router-link v-if="langg=== 'es'" to="/services" >Servicios</router-link>
             </div>
             <div class="flex gap-2 align-items-center h-fit router-nav-link">
                 <font-awesome-icon icon="fa-solid fa-house-chimney" style="width:12px; margin: 0 !important; "/>
