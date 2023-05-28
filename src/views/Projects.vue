@@ -97,8 +97,8 @@
                 <router-link v-if="langg=== 'en'" to="/aboutme" >About me</router-link>
             </div>
             <div class="flex gap-2 align-items-center h-fit router-nav-link">
-                <router-link v-if="langg=== 'en'" to="/contact" >Contact</router-link>
-                <router-link v-if="langg=== 'es'" to="/contact" >Contacto</router-link>
+                <router-link v-if="langg=== 'en'" to="/services" >Services</router-link>
+                <router-link v-if="langg=== 'es'" to="/services" >Servicios</router-link>
                 <font-awesome-icon style="width:12px; margin: 0 !important; " icon="fa-solid fa-arrow-right" />
             </div>
         </div>

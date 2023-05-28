@@ -8,6 +8,7 @@
                 <div class="links">
                   <router-link to="/aboutme">Sobre mi</router-link>
                   <router-link to="/projects">Proyectos</router-link>
+                  <router-link to="/services">Servicios</router-link>
                   <router-link to="/contact">Contacto</router-link>
                 </div>
               </template>
@@ -15,6 +16,7 @@
                 <div class="links">
                   <router-link to="/aboutme">About me</router-link>
                   <router-link to="/projects">Projects</router-link>
+                  <router-link to="/services">Services</router-link>
                   <router-link to="/contact">Contact</router-link>
                 </div>
               </template>
