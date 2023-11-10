@@ -9,6 +9,32 @@
         <div class="cardsContainer">
             <div class="card">
                 <div class="card-img-cont">
+                    <img src="@/assets/21.png" alt="">
+                </div>
+                <div class="detailsCont">
+                    <span>UNC - Tienda online</span>
+                    <p>Este trabajo consiste en una tienda online con mi plataforma eMart, la cual fue desarrollada para la marca de stickers Unique Nifty Crafts. El servicio cuenta con una tienda online donde sus clientes realizan sus pedidos y con un panel de administración para el vendedor, donde allí gestiona sus productos, su stock, sus pedidos de la tienda, entre otras funcionalidades. </p>
+                    <div style="display:flex; align-items:end; gap:5px;" class="mt-2">
+                        <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'en'">Made with: </p>
+                        <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'es'">Desarrollado con: </p>
+                        <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
+                        <img src="@/assets/mongodblogo.png" title="MongoDB" style="width:23px; border-radius:6px;" alt="">
+                        <img src="@/assets/express.png" title="Express JS" style="width:23px" alt="">
+                        <img src="@/assets/vue.png" title="Vue" style="width:24px" alt="">
+                        <img src="@/assets/nodejs.png" title="Node.js" style="width:19px" alt="">
+                    </div>
+                    <a href="https://www.uncshop.com.ar/" target="_blank" style="margin-bottom:18px;  cursor:pointer;">
+                        <div class="mt-4 linkCont">
+                            <div class="w-6 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
+                                <font-awesome-icon icon="fa-solid fa-link" style="height: 12px; margin: 0!important;" />
+                            </div>
+                            <span class="linkSpan" >uncshop.com.ar</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-cont">
                     <img src="@/assets/emartscreen1.png" alt="">
                 </div>
                 <div class="detailsCont">
