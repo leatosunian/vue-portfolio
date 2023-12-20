@@ -16,7 +16,6 @@
                 <div class="links">
                   <router-link to="/aboutme">About me</router-link>
                   <router-link to="/projects">Projects</router-link>
-                  <router-link to="/services">Services</router-link>
                   <router-link to="/contact">Contact</router-link>
                 </div>
               </template>

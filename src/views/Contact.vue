@@ -52,11 +52,20 @@
                     <span class="linkSpanContact" >+54 0223-5423025</span>
                 </div>
             </a>
+
+            <a href="https://www.instagram.com/tosunian.dev/" target="_blank" style="margin-bottom:18px; cursor:pointer;">
+                <div class="linkContContact">
+                    <div class="w-10 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
+                        <font-awesome-icon icon="fa-brands fa-instagram-square" style="height: 22px; margin: 0!important;"/>
+                    </div>
+                    <span class="linkSpanContact" >tosunian.dev</span>
+                </div>
+            </a>
         </div>
         <div class="router-nav">
             <div class="flex align-items-center h-fit router-nav-link">
                 <font-awesome-icon style="width:12px; margin: 0 !important; margin-right:8px!important;" icon="fa-solid fa-arrow-left" />
-                <router-link v-if="langg=== 'en'" to="/services" >Services</router-link>
+                <router-link v-if="langg=== 'en'" to="/projects" >Projects</router-link>
                 <router-link v-if="langg=== 'es'" to="/services" >Servicios</router-link>
             </div>
             <div class="flex gap-2 align-items-center h-fit router-nav-link">
