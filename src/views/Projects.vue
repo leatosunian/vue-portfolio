@@ -8,17 +8,48 @@ import { Types } from 'mongoose';
         </div>
 
         <div class="cardsContainer">
+            <div class="card">
+                <div class="card-img-cont">
+                    <img src="@/assets/sacaturnoscreen.png" alt="">
+                </div>
+                <div class="detailsCont">
+                    <span v-if="langg === 'es'" >SacaTurno - Aplicación de turnos online</span>
+                    <span v-if="langg === 'en'" >SacaTurno - Online appointment booking</span>
+                    <p v-if="langg === 'es'">SacaTurno es un SaaS (servicio de software) destinado a la reserva de turnos online. Este servicio es ideal para negocios como peluquerías, centros de estética, masajistas, depiladoras, talleres mecánicos, etc. Quien se registre tendrá un período de prueba gratuito de 30 dias. Al caducar, deberá abonar una suscripción mensual a través de Mercado Pago y su activación es instantánea. Para utilizarlo debés crear tu cuenta, configurar tu empresa, tus servicios y comenzar a cargar tus turnos. Fue desarrollado con TypeScript tanto la interfaz con Next.js como el servidor con Node.js y Express.js. Este ultimo almacena y consulta datos a una base de datos en la nube de MongoDB Atlas.</p>
+                    <p v-if="langg === 'en'">SacaTurno is a SaaS (software as a service) intended for online appointment booking. This service is ideal for businesses such as hairdressers, beauty centers, masseuses, epilators, mechanical workshops, etc. Whoever registers will have a free 30-day trial period. Upon expiration, you must pay a monthly subscription through Mercado Pago and its activation is instantaneous. To use it, you must create your account, create your business, your services and start uploading your appointments. The application was developed with TypeScript, both the interface with Next.js and the server with Node.js and Express.js. The latter stores and queries data to a cloud database from MongoDB Atlas.
+                    </p>
+                    <div style="display:flex; align-items:end; gap:5px;" class="mt-2">
+                        <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'en'">Developed with: </p>
+                        <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'es'">Desarrollado con: </p>
+                        <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
+                        <img src="@/assets/typescript.png" title="TypeScript" style="width:23px; border-radius:6px;" alt="">
+                        <img src="@/assets/next.png" title="Next.js" style="width:24px" alt="">
+                        <img src="@/assets/nodejs.png" title="Node.js" style="width:19px" alt="">
+                        <img src="@/assets/express.png" title="Express.js" style="width:23px" alt="">
+                        <img src="@/assets/mongodblogo.png" title="MongoDB" style="width:23px; border-radius:6px;" alt="">
+                    </div>
+                    <a href="https://sacaturno.com.ar/" target="_blank" style="margin-bottom:18px;  cursor:pointer;">
+                        <div class="mt-4 linkCont">
+                            <div class="w-6 h-full" style="display:flex!important;justify-content:center!important;align-items:center!important;">
+                                <font-awesome-icon icon="fa-solid fa-link" style="height: 12px; margin: 0!important;" />
+                            </div>
+                            <span class="linkSpan" >sacaturno.com.ar</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
 
             <div class="card">
                 <div class="card-img-cont">
                     <img src="@/assets/tc1.png" alt="">
                 </div>
                 <div class="detailsCont">
-                    <span>TypeChat - WhatsApp for Windows Clone</span>
+                    <span v-if="langg === 'es'">TypeChat - Chat en tiempo real</span>
+                    <span v-if="langg === 'en'">TypeChat - Real-time chatting app</span>
                     <p v-if="langg === 'es'">Este proyecto consiste en una aplicación de chat en tiempo real, inspirada en la aplicación de escritorio de WhatsApp. Podrás crear tu cuenta, configurar los datos de tu perfil, iniciar y borrar chats mediante un npumero de teléfono de quien quieras contactar. Fue desarrollado con TypeScript tanto a nivel servidor con Node.js y Express.js como la interfaz con React.js. Utilicé MongoDB como base de datos y librerias como Socket.IO para trabajar con comunicación en tiempo real, Framer Motion y TailwindCSS para crear animaciones y asignar estilos en los componentes de la interfaz y Multer para la subida de archivos al servidor, en este caso, las imagenes de las fotos de perfil.</p>
                     <p v-if="langg === 'en'">This proyect consists in a real-time chat application, inspired in WhatsApp's desktop app for Windows. You can create an account, change your information and profile picture in the profile settings, start a new chat by other's phone number or delete it. The app was developed with TypeScript both at the server and visual interface level, using Node.js and Express.js in the backend and React.js in the frontend. As database, I used MongoDB and Mongoose and worked with libraries such as Socket.IO for real-time communication, Multer for server file uploading, in this case for uploading profile images, Framer Motion and TailwindCSS to create animations and styling interface's React components.</p>
                     <div style="display:flex; align-items:end; gap:5px;" class="mt-2">
-                        <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'en'">Made with: </p>
+                        <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'en'">Developed with: </p>
                         <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'es'">Desarrollado con: </p>
                         <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
                         <img src="@/assets/typescript.png" title="TypeScript" style="width:23px; border-radius:6px;" alt="">
@@ -43,10 +74,11 @@ import { Types } from 'mongoose';
                     <img src="@/assets/21.png" alt="">
                 </div>
                 <div class="detailsCont">
-                    <span>UNC - Tienda online</span>
+                    <span v-if="langg === 'es'">UNC - Tienda online</span>
+                    <span v-if="langg === 'en'">UNC - Online store</span>
                     <p>Este trabajo consiste en una tienda online con mi plataforma eMart, la cual fue desarrollada para la marca de stickers Unique Nifty Crafts. El servicio cuenta con una tienda online donde sus clientes realizan sus pedidos y con un panel de administración para el vendedor, donde allí gestiona sus productos, su stock, sus pedidos de la tienda, entre otras funcionalidades. </p>
                     <div style="display:flex; align-items:end; gap:5px;" class="mt-2">
-                        <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'en'">Made with: </p>
+                        <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'en'">Developed with: </p>
                         <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'es'">Desarrollado con: </p>
                         <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
                         <img src="@/assets/mongodblogo.png" title="MongoDB" style="width:23px; border-radius:6px;" alt="">
@@ -70,7 +102,9 @@ import { Types } from 'mongoose';
                     <img src="@/assets/emartscreen1.png" alt="">
                 </div>
                 <div class="detailsCont">
-                    <span>eMart - Online Store</span>
+                    <span v-if="langg === 'en'">eMart - Online store platform</span>
+                    <span v-if="langg === 'es'">eMart - Plataforma de tiendas online</span>
+
                     <p v-if="langg === 'es'">
                         Esta es la tienda online del proyecto eMart, la cual tiene: un <b>listado de los productos</b> y <b>filtros</b> para clasificarlos: por categoría y/o subcategoría, por las <b>variantes del producto</b>(ej. color, talle, modelo, etc.), de mayor a menor precio y viceversa y un <b>carrito de compras</b> donde se agregan los productos que el cliente quiera comprar. El <b>pago</b> se realiza de manera <b>segura</b> mediante <b>Mercado Pago</b>. El cliente tiene en su perfil el <b>historial de sus compras</b> y los datos de cada una, donde se le enviará el <b>código de seguimiento</b> del correo y podrá consultar el estado del envío. Cada cliente se crea su propio perfil y <b>solamente</b> se podrá comprar si sos un <b>cliente registrado</b>
                     </p>
@@ -80,7 +114,7 @@ import { Types } from 'mongoose';
                     </p>
 
                     <div style="display:flex; align-items:end; gap:5px;" class="mt-2">
-                        <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'en'">Made with: </p>
+                        <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'en'">Developed with: </p>
                         <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'es'">Desarrollado con: </p>
                         <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
                         <img src="@/assets/mongodblogo.png" title="MongoDB" style="width:23px; border-radius:6px;" alt="">
@@ -104,7 +138,8 @@ import { Types } from 'mongoose';
                     <img src="@/assets/emartscreen2.png" alt="">
                 </div>
                 <div class="detailsCont">
-                    <span>eMart - Admin's Panel</span>
+                    <span v-if="langg === 'es'">eMart - Panel de vendedor</span>
+                    <span v-if="langg === 'en'">eMart - Admin's Panel</span>
                     <p v-if="langg === 'es'">
                         Este es el panel de administración de la tienda, donde podrás: <b>agregar, modificar, desactivar o borrar los productos</b> y sus respectivas <b>fotos</b> que se muestran en la tienda; modificar los <b>costos de envío</b> y el monto a partir del cual el <b>envío es gratis</b>; personalizar las <b>categorias y las subcategorias</b> en las que se clasifican los productos; <b>visualizar los pedidos</b> realizados en la tienda con los datos del cliente, del envio y de los productos de la compra. Al despachar los productos en el correo, se le envia el <b>código de seguimiento</b> al cliente para que pueda hacer el tracking de su pedido. En el <b>historial de pedidos</b> podés filtrar por dia, por período o buscar por número de orden.
                     </p>
@@ -114,7 +149,7 @@ import { Types } from 'mongoose';
                     </p>
 
                     <div style="display:flex; align-items:end; gap:5px;" class="mt-2">
-                        <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'en'">Made with: </p>
+                        <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'en'">Developed with: </p>
                         <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'es'">Desarrollado con: </p>
                         <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
                         <img src="@/assets/mongodblogo.png" title="MongoDB" style="width:23px; border-radius:6px;" alt="">
@@ -139,14 +174,15 @@ import { Types } from 'mongoose';
                     <img src="@/assets/culturascreen.png" alt="">
                 </div>
                 <div class="detailsCont">
-                    <span>Cultura Sativa Growshop - Catálogo</span>
+                    <span v-if="langg === 'es'">Cultura Sativa - Landing page / Catálogo</span>
+                    <span v-if="langg === 'en'">Cultura Sativa - Landing page / Catalog</span>
                     <p v-if="langg === 'es'">
                         Esta página web, la cual fue mi primer proyecto, es un catálogo de productos creada para una tienda de cultivo. A pedido del cliente, se realizó el catálogo dividido en cuatro categorías y una sección de contacto donde se encuentran accesos directos a las redes sociales, ubicación y mas información sobre la tienda fisica. El diseño de la página es responsivo, se adapta tanto a celular, como a tablets y PC. </p>
                     <p v-if="langg === 'en'">
                         This was my first project. This is a static small business website with a catalog of their products. Following cilent's requests, it was divided in four categories and a contact section with the business' social media, shop's address and more information. Its responsive design makes the website fit in PCs, tablets and mobiles.
                     </p>
                     <div style="display:flex; align-items:end; gap:5px;" class="mt-2">
-                        <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'en'">Made with: </p>
+                        <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'en'">Developed with: </p>
                         <p style="font-weight:500; font-size:14px; line-height:14px; margin-right:3px;" v-if="langg === 'es'">Desarrollado con: </p>
                         <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
                         <img src="@/assets/html.png" title="HTML5" style="width:20px; border-radius:6px;" alt="">
