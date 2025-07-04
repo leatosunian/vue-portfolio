@@ -9,6 +9,206 @@ import { Types } from 'mongoose';
     <div class="cardsContainer">
       <div class="card">
         <div class="card-img-cont">
+          <img src="@/assets/cannabica.png" alt="" />
+        </div>
+        <div class="detailsCont">
+          <span v-if="langg === 'es'">Cannabica Group - Tienda online</span>
+          <span v-if="langg === 'en'"> Somacann - Online Store </span>
+          <p v-if="langg === 'es'">
+            Tienda online desarrollada utilizando mi propia plataforma E-Mart.
+            El sitio permite a los usuarios explorar productos, agregarlos al
+            carrito de compras y completar el pedido mediante una pasarela de
+            pago segura con MercadoPago. Es una solución ideal para
+            emprendimientos que buscan vender en línea de forma rápida, simple y
+            profesional.
+          </p>
+          <p v-if="langg === 'en'">
+            Online store developed using my custom e-commerce platform E-Mart.
+            The website allows users to browse products, add them to a shopping
+            cart, and complete their purchase through a secure checkout powered
+            by MercadoPago. It's an ideal solution for small businesses looking
+            to sell online quickly, easily, and professionally.
+          </p>
+          <div style="display: flex; align-items: end; gap: 5px" class="mt-2">
+            <p
+              style="
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                margin-right: 3px;
+              "
+              v-if="langg === 'en'"
+            >
+              Developed with:
+            </p>
+            <p
+              style="
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                margin-right: 3px;
+              "
+              v-if="langg === 'es'"
+            >
+              Desarrollado con:
+            </p>
+            <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
+            <img
+              src="@/assets/mongodblogo.png"
+              title="MongoDB"
+              style="width: 23px; border-radius: 6px"
+              alt=""
+            />
+            <img
+              src="@/assets/express.png"
+              title="Express JS"
+              style="width: 23px"
+              alt=""
+            />
+            <img
+              src="@/assets/vue.png"
+              title="Vue"
+              style="width: 24px"
+              alt=""
+            />
+            <img
+              src="@/assets/nodejs.png"
+              title="Node.js"
+              style="width: 19px"
+              alt=""
+            />
+          </div>
+          <a
+            href="https://cannabicagroup.com.ar/"
+            target="_blank"
+            style="margin-bottom: 18px; cursor: pointer"
+          >
+            <div class="mt-4 linkCont">
+              <div
+                class="w-6 h-full"
+                style="
+                  display: flex !important;
+                  justify-content: center !important;
+                  align-items: center !important;
+                "
+              >
+                <font-awesome-icon
+                  icon="fa-solid fa-link"
+                  style="height: 12px; margin: 0 !important"
+                />
+              </div>
+              <span class="linkSpan">cannabicagroup.com.ar</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-cont">
+          <img src="@/assets/420app2.png" alt="" />
+        </div>
+        <div class="detailsCont">
+          <span v-if="langg === 'es'">420app - Inventario </span>
+          <span v-if="langg === 'en'">
+            420App - Product & Order Management
+          </span>
+          <p v-if="langg === 'es'">
+            420App es una aplicación web desarrollada para optimizar la
+            administración de productos y pedidos. Permite agregar productos
+            fácilmente, aplicar ajustes de precios por porcentaje, definir
+            márgenes de ganancia individuales y gestionar pedidos de manera ágil
+            y eficiente. Es una herramienta pensada para negocios que buscan
+            simplificar su gestión comercial diaria.
+          </p>
+          <p v-if="langg === 'en'">
+            420App is a web application I developed to streamline product and
+            order management for small businesses. It allows users to add new
+            products, adjust prices by percentage, set individual profit
+            margins, and create or modify customer orders with ease. It's a
+            practical tool designed to simplify daily commercial operations.
+          </p>
+          <div style="display: flex; align-items: end; gap: 5px" class="mt-2">
+            <p
+              style="
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                margin-right: 3px;
+              "
+              v-if="langg === 'en'"
+            >
+              Developed with:
+            </p>
+            <p
+              style="
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                margin-right: 3px;
+              "
+              v-if="langg === 'es'"
+            >
+              Desarrollado con:
+            </p>
+            <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
+            <img
+              src="@/assets/typescript.png"
+              title="TypeScript"
+              style="width: 23px; border-radius: 6px"
+              alt=""
+            />
+            <img
+              src="@/assets/next.png"
+              title="Next.js"
+              style="width: 24px"
+              alt=""
+            />
+            <img
+              src="@/assets/nodejs.png"
+              title="Node.js"
+              style="width: 19px"
+              alt=""
+            />
+            <img
+              src="@/assets/express.png"
+              title="Express.js"
+              style="width: 23px"
+              alt=""
+            />
+            <img
+              src="@/assets/mongodblogo.png"
+              title="MongoDB"
+              style="width: 23px; border-radius: 6px"
+              alt=""
+            />
+          </div>
+          <!-- <a
+            href="https://sacaturno.com.ar/"
+            target="_blank"
+            style="margin-bottom: 18px; cursor: pointer"
+          >
+            <div class="mt-4 linkCont">
+              <div
+                class="w-6 h-full"
+                style="
+                  display: flex !important;
+                  justify-content: center !important;
+                  align-items: center !important;
+                "
+              >
+                <font-awesome-icon
+                  icon="fa-solid fa-link"
+                  style="height: 12px; margin: 0 !important"
+                />
+              </div>
+              <span class="linkSpan">sacaturno.com.ar</span>
+            </div>
+          </a> -->
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-cont">
           <img src="@/assets/sacaturnoscreen.png" alt="" />
         </div>
         <div class="detailsCont">
@@ -247,7 +447,7 @@ import { Types } from 'mongoose';
             de la tienda, entre otras funcionalidades.
           </p>
 
-          <div style="display: flex; flex-direction:column; margin-top:10px;">
+          <div style="display: flex; flex-direction: column; margin-top: 10px">
             <div style="display: flex; align-items: end; gap: 5px" class="mt-2">
               <p
                 style="
@@ -681,7 +881,7 @@ import { Types } from 'mongoose';
         />
       </router-link>
 
-            <router-link
+      <router-link
         v-if="langg === 'es'"
         to="/contact"
         class="flex gap-2 align-items-center h-fit router-nav-link"
@@ -911,8 +1111,8 @@ import { Types } from 'mongoose';
   .cardsContainer {
     margin-top: 25px !important;
     width: 100%;
-    height:70vh !important;
-    min-height:70vh !important;
+    height: 70vh !important;
+    min-height: 70vh !important;
     gap: 30px;
     overflow-y: scroll;
     display: flex;
