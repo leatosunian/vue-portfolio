@@ -8,7 +8,7 @@
                 <div class="links">
                   <router-link to="/aboutme">Sobre mi</router-link>
                   <router-link to="/projects">Proyectos</router-link>
-                  <router-link to="/services">Servicios</router-link>
+                  <!-- <router-link to="/services">Servicios</router-link> -->
                   <router-link to="/contact">Contacto</router-link>
                 </div>
               </template>
@@ -79,7 +79,9 @@
         </nav>
     </div>
 </template>
+
 <style>
+
 .darkbar{
   background-color: #0e1013;
   color: rgb(255, 255, 255);
@@ -99,7 +101,9 @@ svg {
     margin-top: 2px;
   }
 }
+
 </style>
+
 <script>
 
 export default {
