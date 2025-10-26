@@ -5,20 +5,20 @@
         v-if="langg === 'en'"
         class="font-semibold"
         style="margin-bottom: 16px"
-        >Welcome all!, I'm</span
+        >Welcome all! I'm</span
       >
       <span
         v-if="langg === 'es'"
         class="font-semibold"
         style="margin-bottom: 16px"
-        >¡Hola!, me llamo</span
+        >¡Hola! Soy</span
       >
       <h1 class="font-bold">Leandro Tosunian</h1>
       <span class="font-semibold reverse-text" v-if="langg === 'en'"
         >a freelancer Full Stack Web Developer</span
       >
       <span class="font-semibold reverse-text" v-if="langg === 'es'"
-        >soy desarrollador web Full Stack</span
+        >desarrollador web Full Stack</span
       >
       <div
         v-if="!darkMode"

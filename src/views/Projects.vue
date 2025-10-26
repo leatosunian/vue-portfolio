@@ -1,4 +1,5 @@
-import { Types } from 'mongoose';
+import { Types } from 'mongoose'; import { Drawer as DrawerPrimitive } from
+'vaul';
 <template>
   <div :class="[{ dark: darkMode }, 'main-container-top-projects']">
     <div class="textHeader">
@@ -7,125 +8,33 @@ import { Types } from 'mongoose';
     </div>
 
     <div class="cardsContainer">
+      <!-- telovendo page -->
       <div class="card">
         <div class="card-img-cont">
-          <img src="@/assets/cannabica.png" alt="" />
+          <img src="@/assets/telovendo.png" alt="" />
         </div>
         <div class="detailsCont">
-          <span v-if="langg === 'es'">Cannabica Group - Tienda online</span>
-          <span v-if="langg === 'en'"> Somacann - Online Store </span>
+          <span v-if="langg === 'es'">Telovendo - Página web / Catálogo</span>
+          <span v-if="langg === 'en'">Telovendo - Web Page</span>
           <p v-if="langg === 'es'">
-            Tienda online desarrollada utilizando mi propia plataforma E-Mart.
-            El sitio permite a los usuarios explorar productos, agregarlos al
-            carrito de compras y completar el pedido mediante una pasarela de
-            pago segura con MercadoPago. Es una solución ideal para
-            emprendimientos que buscan vender en línea de forma rápida, simple y
-            profesional.
+            Página web para Telovendo Santa Fé, dedicados a la venta de
+            vehículos. El sitio cuenta con un diseño moderno y responsivo, con
+            su página principal, un apartado de catálogo de vehículos y un
+            formulario de contacto para enviar una solicitud de cotización. Todo
+            el stock y el envío de consultas se gestionan desde un panel de
+            administración privado, donde además cuenta con un CRM para gestión
+            de clientes y un presupuestador digital, que genera un archivo PDF
+            con un diseño profesional para descargar y enviar al cliente.
           </p>
           <p v-if="langg === 'en'">
-            Online store developed using my custom e-commerce platform E-Mart.
-            The website allows users to browse products, add them to a shopping
-            cart, and complete their purchase through a secure checkout powered
-            by MercadoPago. It's an ideal solution for small businesses looking
-            to sell online quickly, easily, and professionally.
-          </p>
-          <div style="display: flex; align-items: end; gap: 5px" class="mt-2">
-            <p
-              style="
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 14px;
-                margin-right: 3px;
-              "
-              v-if="langg === 'en'"
-            >
-              Developed with:
-            </p>
-            <p
-              style="
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 14px;
-                margin-right: 3px;
-              "
-              v-if="langg === 'es'"
-            >
-              Desarrollado con:
-            </p>
-            <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
-            <img
-              src="@/assets/mongodblogo.png"
-              title="MongoDB"
-              style="width: 23px; border-radius: 6px"
-              alt=""
-            />
-            <img
-              src="@/assets/express.png"
-              title="Express JS"
-              style="width: 23px"
-              alt=""
-            />
-            <img
-              src="@/assets/vue.png"
-              title="Vue"
-              style="width: 24px"
-              alt=""
-            />
-            <img
-              src="@/assets/nodejs.png"
-              title="Node.js"
-              style="width: 19px"
-              alt=""
-            />
-          </div>
-          <a
-            href="https://cannabicagroup.com.ar/"
-            target="_blank"
-            style="margin-bottom: 18px; cursor: pointer"
-          >
-            <div class="mt-4 linkCont">
-              <div
-                class="w-6 h-full"
-                style="
-                  display: flex !important;
-                  justify-content: center !important;
-                  align-items: center !important;
-                "
-              >
-                <font-awesome-icon
-                  icon="fa-solid fa-link"
-                  style="height: 12px; margin: 0 !important"
-                />
-              </div>
-              <span class="linkSpan">cannabicagroup.com.ar</span>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-img-cont">
-          <img src="@/assets/420app2.png" alt="" />
-        </div>
-        <div class="detailsCont">
-          <span v-if="langg === 'es'">420app - Inventario </span>
-          <span v-if="langg === 'en'">
-            420App - Product & Order Management
-          </span>
-          <p v-if="langg === 'es'">
-            420App es una aplicación web desarrollada para optimizar la
-            administración de productos y pedidos. Permite agregar productos
-            fácilmente, aplicar ajustes de precios por porcentaje, definir
-            márgenes de ganancia individuales y gestionar pedidos de manera ágil
-            y eficiente. Es una herramienta pensada para negocios que buscan
-            simplificar su gestión comercial diaria.
-          </p>
-          <p v-if="langg === 'en'">
-            420App is a web application I developed to streamline product and
-            order management for small businesses. It allows users to add new
-            products, adjust prices by percentage, set individual profit
-            margins, and create or modify customer orders with ease. It's a
-            practical tool designed to simplify daily commercial operations.
+            A modern and responsive web platform dedicated to vehicle sales. The
+            site features a main landing page, a comprehensive vehicle catalog,
+            and a contact form that allows users to submit quotation requests.
+            All inventory data and inquiries are managed through a private
+            administration panel, which also includes a CRM system for client
+            management and a digital quotation generator capable of producing
+            professionally designed PDF documents for download and client
+            delivery.
           </p>
           <div style="display: flex; align-items: end; gap: 5px" class="mt-2">
             <p
@@ -182,8 +91,8 @@ import { Types } from 'mongoose';
               alt=""
             />
           </div>
-          <!-- <a
-            href="https://sacaturno.com.ar/"
+          <a
+            href="https://telovendosf.com.ar/"
             target="_blank"
             style="margin-bottom: 18px; cursor: pointer"
           >
@@ -201,12 +110,128 @@ import { Types } from 'mongoose';
                   style="height: 12px; margin: 0 !important"
                 />
               </div>
-              <span class="linkSpan">sacaturno.com.ar</span>
+              <span class="linkSpan">telovendosf.com.ar</span>
             </div>
-          </a> -->
+          </a>
         </div>
       </div>
 
+      <!-- telovendo panel -->
+      <div class="card">
+        <div class="card-img-cont">
+          <img src="@/assets/telovendopanel.png" alt="" />
+        </div>
+        <div class="detailsCont">
+          <span v-if="langg === 'es'"
+            >Telovendo - CRM / Presupuestador digital
+          </span>
+          <span v-if="langg === 'en'"
+            >Telovendo - CRM / Budget PDF Generator</span
+          >
+          <p v-if="langg === 'es'">
+            Panel de administración privado para gestionar el stock de
+            vehículos, crear un lead y responder a las solicitudes de cotización
+            recibidas desde la página web, y la gestión de clientes mediante un
+            CRM integrado con roles de usuario (administrador asigna leads y
+            tareas a empleados). Además, cuenta con un presupuestador digital
+            que permite generar cotizaciones en formato PDF con un diseño
+            profesional para descargar y enviar al cliente, junto a un historial
+            de archivos creados por cada lead. Todas las funcionalidades son
+            adecuadas a las necesidades del negocio y a pedido de mi cliente.
+          </p>
+          <p v-if="langg === 'en'">
+            Private Administration Panel for managing vehicle inventory,
+            creating leads, and responding to quotation requests received
+            through the website. It also includes client management via an
+            integrated CRM system with user roles — allowing administrators to
+            assign leads and tasks to employees. Additionally, it features a
+            digital quotation generator that produces professionally designed
+            PDF quotes for download and client delivery, along with a history
+            log of all files generated for each lead. All functionalities were
+            custom-developed to meet the specific needs of the business and
+            tailored to the client’s requirements.
+          </p>
+          <div style="display: flex; align-items: end; gap: 5px" class="mt-2">
+            <p
+              style="
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                margin-right: 3px;
+              "
+              v-if="langg === 'en'"
+            >
+              Developed with:
+            </p>
+            <p
+              style="
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                margin-right: 3px;
+              "
+              v-if="langg === 'es'"
+            >
+              Desarrollado con:
+            </p>
+            <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
+            <img
+              src="@/assets/typescript.png"
+              title="TypeScript"
+              style="width: 23px; border-radius: 6px"
+              alt=""
+            />
+            <img
+              src="@/assets/next.png"
+              title="Next.js"
+              style="width: 24px"
+              alt=""
+            />
+            <img
+              src="@/assets/nodejs.png"
+              title="Node.js"
+              style="width: 19px"
+              alt=""
+            />
+            <img
+              src="@/assets/express.png"
+              title="Express.js"
+              style="width: 23px"
+              alt=""
+            />
+            <img
+              src="@/assets/mongodblogo.png"
+              title="MongoDB"
+              style="width: 23px; border-radius: 6px"
+              alt=""
+            />
+          </div>
+          <a
+            href="https://telovendosf.com.ar/"
+            target="_blank"
+            style="margin-bottom: 18px; cursor: pointer"
+          >
+            <div class="mt-4 linkCont">
+              <div
+                class="w-6 h-full"
+                style="
+                  display: flex !important;
+                  justify-content: center !important;
+                  align-items: center !important;
+                "
+              >
+                <font-awesome-icon
+                  icon="fa-solid fa-link"
+                  style="height: 12px; margin: 0 !important"
+                />
+              </div>
+              <span class="linkSpan">telovendosf.com.ar</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- sacaturno -->
       <div class="card">
         <div class="card-img-cont">
           <img src="@/assets/sacaturnoscreen.png" alt="" />
@@ -318,6 +343,209 @@ import { Types } from 'mongoose';
         </div>
       </div>
 
+      <!-- 420app -->
+      <div class="card">
+        <div class="card-img-cont">
+          <img src="@/assets/420app2.png" alt="" />
+        </div>
+        <div class="detailsCont">
+          <span v-if="langg === 'es'">420app - Inventario </span>
+          <span v-if="langg === 'en'">
+            420App - Product & Order Management
+          </span>
+          <p v-if="langg === 'es'">
+            420App es una aplicación web desarrollada para optimizar la
+            administración de productos y pedidos. Permite agregar productos
+            fácilmente, aplicar ajustes de precios por porcentaje, definir
+            márgenes de ganancia individuales y gestionar pedidos de manera ágil
+            y eficiente. Es una herramienta pensada para negocios que buscan
+            simplificar su gestión comercial diaria.
+          </p>
+          <p v-if="langg === 'en'">
+            420App is a web application I developed to streamline product and
+            order management for small businesses. It allows users to add new
+            products, adjust prices by percentage, set individual profit
+            margins, and create or modify customer orders with ease. It's a
+            practical tool designed to simplify daily commercial operations.
+          </p>
+          <div style="display: flex; align-items: end; gap: 5px" class="mt-2">
+            <p
+              style="
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                margin-right: 3px;
+              "
+              v-if="langg === 'en'"
+            >
+              Developed with:
+            </p>
+            <p
+              style="
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                margin-right: 3px;
+              "
+              v-if="langg === 'es'"
+            >
+              Desarrollado con:
+            </p>
+            <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
+            <img
+              src="@/assets/typescript.png"
+              title="TypeScript"
+              style="width: 23px; border-radius: 6px"
+              alt=""
+            />
+            <img
+              src="@/assets/next.png"
+              title="Next.js"
+              style="width: 24px"
+              alt=""
+            />
+            <img
+              src="@/assets/nodejs.png"
+              title="Node.js"
+              style="width: 19px"
+              alt=""
+            />
+            <img
+              src="@/assets/express.png"
+              title="Express.js"
+              style="width: 23px"
+              alt=""
+            />
+            <img
+              src="@/assets/mongodblogo.png"
+              title="MongoDB"
+              style="width: 23px; border-radius: 6px"
+              alt=""
+            />
+          </div>
+          <!-- <a
+            href="https://sacaturno.com.ar/"
+            target="_blank"
+            style="margin-bottom: 18px; cursor: pointer"
+          >
+            <div class="mt-4 linkCont">
+              <div
+                class="w-6 h-full"
+                style="
+                  display: flex !important;
+                  justify-content: center !important;
+                  align-items: center !important;
+                "
+              >
+                <font-awesome-icon
+                  icon="fa-solid fa-link"
+                  style="height: 12px; margin: 0 !important"
+                />
+              </div>
+              <span class="linkSpan">sacaturno.com.ar</span>
+            </div>
+          </a> -->
+        </div>
+      </div>
+
+      <!-- somacann -->
+      <div class="card">
+        <div class="card-img-cont">
+          <img src="@/assets/cannabica.png" alt="" />
+        </div>
+        <div class="detailsCont">
+          <span v-if="langg === 'es'">Somacann - Tienda online</span>
+          <span v-if="langg === 'en'">Somacann - Online Store</span>
+          <p v-if="langg === 'es'">
+            Tienda online desarrollada utilizando mi propia plataforma E-Mart.
+            El sitio permite a los usuarios explorar productos, agregarlos al
+            carrito de compras y completar el pedido mediante una pasarela de
+            pago segura con MercadoPago. Es una solución ideal para
+            emprendimientos que buscan vender en línea de forma rápida, simple y
+            profesional.
+          </p>
+          <p v-if="langg === 'en'">
+            Online store developed using my custom e-commerce platform E-Mart.
+            The website allows users to browse products, add them to a shopping
+            cart, and complete their purchase through a secure checkout powered
+            by MercadoPago. It's an ideal solution for small businesses looking
+            to sell online quickly, easily, and professionally.
+          </p>
+          <div style="display: flex; align-items: end; gap: 5px" class="mt-2">
+            <p
+              style="
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                margin-right: 3px;
+              "
+              v-if="langg === 'en'"
+            >
+              Developed with:
+            </p>
+            <p
+              style="
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                margin-right: 3px;
+              "
+              v-if="langg === 'es'"
+            >
+              Desarrollado con:
+            </p>
+            <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
+            <img
+              src="@/assets/mongodblogo.png"
+              title="MongoDB"
+              style="width: 23px; border-radius: 6px"
+              alt=""
+            />
+            <img
+              src="@/assets/express.png"
+              title="Express JS"
+              style="width: 23px"
+              alt=""
+            />
+            <img
+              src="@/assets/vue.png"
+              title="Vue"
+              style="width: 24px"
+              alt=""
+            />
+            <img
+              src="@/assets/nodejs.png"
+              title="Node.js"
+              style="width: 19px"
+              alt=""
+            />
+          </div>
+          <a
+            href="https://cannabicagroup.com.ar/"
+            target="_blank"
+            style="margin-bottom: 18px; cursor: pointer"
+          >
+            <div class="mt-4 linkCont">
+              <div
+                class="w-6 h-full"
+                style="
+                  display: flex !important;
+                  justify-content: center !important;
+                  align-items: center !important;
+                "
+              >
+                <font-awesome-icon
+                  icon="fa-solid fa-link"
+                  style="height: 12px; margin: 0 !important"
+                />
+              </div>
+              <span class="linkSpan">cannabicagroup.com.ar</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- typechat -->
       <div class="card">
         <div class="card-img-cont">
           <img src="@/assets/tc1.png" alt="" />
@@ -431,6 +659,7 @@ import { Types } from 'mongoose';
         </div>
       </div>
 
+      <!-- unc -->
       <div class="card">
         <div class="card-img-cont">
           <img src="@/assets/21.png" alt="" />
@@ -523,6 +752,7 @@ import { Types } from 'mongoose';
         </div>
       </div>
 
+      <!-- emart tienda -->
       <div class="card">
         <div class="card-img-cont">
           <img src="@/assets/emartscreen1.png" alt="" />
@@ -634,6 +864,7 @@ import { Types } from 'mongoose';
         </div>
       </div>
 
+      <!-- emart panel -->
       <div class="card">
         <div class="card-img-cont">
           <img src="@/assets/emartscreen2.png" alt="" />
@@ -740,6 +971,7 @@ import { Types } from 'mongoose';
         </div>
       </div>
 
+      <!-- cultura sativa -->
       <div class="card">
         <div class="card-img-cont">
           <img src="@/assets/culturascreen.png" alt="" />

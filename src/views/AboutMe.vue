@@ -19,10 +19,9 @@
         <p v-if="langg === 'es'" class="mb-4 aboutP">
           Trabajo como freelancer ayudando a negocios y emprendedores a
           digitalizar y escalar sus proyectos mediante sitios web modernos,
-          tiendas online y sistemas de gestión personalizados. Actualmente,
-          también estudio la Tecnicatura en Programación en la Universidad
-          Tecnológica Nacional, donde sigo fortaleciendo mis conocimientos en
-          desarrollo de software.
+          tiendas online y sistemas de gestión personalizados. Actualmente, me
+          encuentro estudiando la Tecnicatura en Programación en la UTN Mar del
+          Plata, fortaleciendo mis conocimientos en desarrollo de software.
         </p>
         <p v-if="langg === 'en'" class="mb-4">
           <!-- <img src="@/assets/mypic.jpg" alt="" class="picContMobile" /> -->
@@ -169,9 +168,7 @@
               <p v-if="langg === 'en'">Languages</p>
             </div>
             <div>
-              <p style="font-size: 13px">
-                HTML5 | CSS3 | TypeScript | C
-              </p>
+              <p style="font-size: 13px">HTML5 | CSS3 | TypeScript | Java</p>
             </div>
           </div>
           <div class="kBox">
@@ -188,7 +185,7 @@
             <div>
               <p style="font-size: 13px">
                 Node.js | Express.js | React.js | Next.js | Vue.js | MongoDB |
-                Tailwind | Bootstrap | JWT | Socket.io
+                MySQL | Tailwind | Shadcn | JWT | Socket.io
               </p>
             </div>
           </div>
@@ -202,7 +199,9 @@
               <p v-if="langg === 'en'">Tools</p>
             </div>
             <div>
-              <p style="font-size: 13px">Postman | MongoDB Compass | GitHub</p>
+              <p style="font-size: 13px">
+                Postman | MongoDB Compass | GitHub | SQL Workbench
+              </p>
             </div>
           </div>
         </div>
