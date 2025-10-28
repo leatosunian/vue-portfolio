@@ -660,7 +660,7 @@ import { Types } from 'mongoose'; import { Drawer as DrawerPrimitive } from
       </div>
 
       <!-- unc -->
-      <div class="card">
+      <!-- <div class="card">
         <div class="card-img-cont">
           <img src="@/assets/21.png" alt="" />
         </div>
@@ -700,7 +700,6 @@ import { Types } from 'mongoose'; import { Drawer as DrawerPrimitive } from
               >
                 Desarrollado con:
               </p>
-              <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
               <img
                 src="@/assets/mongodblogo.png"
                 title="MongoDB"
@@ -750,7 +749,7 @@ import { Types } from 'mongoose'; import { Drawer as DrawerPrimitive } from
             </a>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- emart tienda -->
       <div class="card">
