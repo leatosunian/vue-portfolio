@@ -3,7 +3,7 @@
     "target": "es5",
     "module": "esnext",
     "baseUrl": "./",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "paths": {
       "@/*": [
         "src/*"
@@ -15,5 +15,7 @@
       "dom.iterable",
       "scripthost"
     ]
+    ,
+    "ignoreDeprecations": "6.0"
   }
 }
