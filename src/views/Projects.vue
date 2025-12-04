@@ -610,27 +610,9 @@ import { Types } from 'mongoose'; import { Drawer as DrawerPrimitive } from
               style="width: 24px"
               alt=""
             />
-            <img
-              src="@/assets/nodejs.png"
-              title="Node.js"
-              style="width: 19px"
-              alt=""
-            />
-            <img
-              src="@/assets/express.png"
-              title="Express.js"
-              style="width: 23px"
-              alt=""
-            />
-            <img
-              src="@/assets/mongodblogo.png"
-              title="MongoDB"
-              style="width: 23px; border-radius: 6px"
-              alt=""
-            />
           </div>
           <a
-            href="https://telovendosf.com.ar/"
+            href="https://encino-carpinteria.netlify.app/"
             target="_blank"
             style="margin-bottom: 18px; cursor: pointer"
           >
@@ -648,7 +630,7 @@ import { Types } from 'mongoose'; import { Drawer as DrawerPrimitive } from
                   style="height: 12px; margin: 0 !important"
                 />
               </div>
-              <span class="linkSpan">telovendosf.com.ar</span>
+              <span class="linkSpan">encinocarpinteria.com.ar</span>
             </div>
           </a>
         </div>
