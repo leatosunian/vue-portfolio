@@ -555,7 +555,7 @@ import { Types } from 'mongoose'; import { Drawer as DrawerPrimitive } from
           <span v-if="langg === 'en'">Encino - Landing Page</span>
           <p v-if="langg === 'es'">
             Landing page desarrollada a medida para Encino Carpintería, diseñada
-            para presentar de forma clara la identidad del artesano y sus
+            para presentar de forma clara la identidad de la carpintería y sus
             servicios. Incluye una sección “Sobre mí”, una galería de trabajos
             realizados, una presentación de las instalaciones del taller y un
             módulo de reseñas de clientes para reforzar la confianza. Además,
