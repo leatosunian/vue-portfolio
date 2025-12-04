@@ -8,13 +8,125 @@ import { Types } from 'mongoose'; import { Drawer as DrawerPrimitive } from
     </div>
 
     <div class="cardsContainer">
+      <!-- sacaturno -->
+      <div class="card">
+        <div class="card-img-cont">
+          <img src="@/assets/sacaturnoscreen.png" alt="" />
+        </div>
+        <div class="detailsCont">
+          <span v-if="langg === 'es'">SacaTurno - SaaS Turnos Online</span>
+          <span v-if="langg === 'en'"
+            >SacaTurno - SaaS Online Appointment Booking</span
+          >
+          <p v-if="langg === 'es'">
+            SacaTurno es una aplicación web para que negocios como peluquerías,
+            centros de estética, masajistas, talleres mecánicos y otros, puedan
+            gestionar sus turnos de forma online. Es un servicio online que
+            ofrece 15 días de prueba gratis. Luego, para seguir usándolo, se
+            paga una suscripción mensual a través de Mercado Pago, con
+            activación automática. Solo tenés que crear tu cuenta, configurar tu
+            negocio y servicios, y ya podés empezar a cargar turnos.
+          </p>
+          <p v-if="langg === 'en'">
+            SacaTurno is a SaaS (software as a service) intended for online
+            appointment booking. This service is ideal for businesses such as
+            hairdressers, beauty centers, masseuses, epilators, mechanical
+            workshops, etc. Whoever registers will have a free 30-day trial
+            period. Upon expiration, you must pay a monthly subscription through
+            Mercado Pago and its activation is instantaneous. To use it, you
+            must create your account, create your business, your services and
+            start uploading your appointments. The application was developed
+            with TypeScript, both the interface with Next.js and the server with
+            Node.js and Express.js. The latter stores and queries data to a
+            cloud database from MongoDB Atlas.
+          </p>
+          <div style="display: flex; align-items: end; gap: 5px" class="mt-2">
+            <p
+              style="
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                margin-right: 3px;
+              "
+              v-if="langg === 'en'"
+            >
+              Developed with:
+            </p>
+            <p
+              style="
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                margin-right: 3px;
+              "
+              v-if="langg === 'es'"
+            >
+              Desarrollado con:
+            </p>
+            <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
+            <img
+              src="@/assets/typescript.png"
+              title="TypeScript"
+              style="width: 23px; border-radius: 6px"
+              alt=""
+            />
+            <img
+              src="@/assets/next.png"
+              title="Next.js"
+              style="width: 24px"
+              alt=""
+            />
+            <img
+              src="@/assets/nodejs.png"
+              title="Node.js"
+              style="width: 19px"
+              alt=""
+            />
+            <img
+              src="@/assets/express.png"
+              title="Express.js"
+              style="width: 23px"
+              alt=""
+            />
+            <img
+              src="@/assets/mongodblogo.png"
+              title="MongoDB"
+              style="width: 23px; border-radius: 6px"
+              alt=""
+            />
+          </div>
+          <a
+            href="https://sacaturno.com.ar/"
+            target="_blank"
+            style="margin-bottom: 18px; cursor: pointer"
+          >
+            <div class="mt-4 linkCont">
+              <div
+                class="w-6 h-full"
+                style="
+                  display: flex !important;
+                  justify-content: center !important;
+                  align-items: center !important;
+                "
+              >
+                <font-awesome-icon
+                  icon="fa-solid fa-link"
+                  style="height: 12px; margin: 0 !important"
+                />
+              </div>
+              <span class="linkSpan">sacaturno.com.ar</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
       <!-- telovendo page -->
       <div class="card">
         <div class="card-img-cont">
           <img src="@/assets/telovendo.png" alt="" />
         </div>
         <div class="detailsCont">
-          <span v-if="langg === 'es'">Telovendo - Página web / Catálogo</span>
+          <span v-if="langg === 'es'">Telovendo - Página Web con Catálogo</span>
           <span v-if="langg === 'en'">Telovendo - Web Page</span>
           <p v-if="langg === 'es'">
             Página web para Telovendo Santa Fé, dedicados a la venta de
@@ -123,7 +235,7 @@ import { Types } from 'mongoose'; import { Drawer as DrawerPrimitive } from
         </div>
         <div class="detailsCont">
           <span v-if="langg === 'es'"
-            >Telovendo - CRM / Presupuestador digital
+            >Telovendo - CRM / Presupuestador Digital
           </span>
           <span v-if="langg === 'en'"
             >Telovendo - CRM / Budget PDF Generator</span
@@ -226,118 +338,6 @@ import { Types } from 'mongoose'; import { Drawer as DrawerPrimitive } from
                 />
               </div>
               <span class="linkSpan">telovendosf.com.ar</span>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <!-- sacaturno -->
-      <div class="card">
-        <div class="card-img-cont">
-          <img src="@/assets/sacaturnoscreen.png" alt="" />
-        </div>
-        <div class="detailsCont">
-          <span v-if="langg === 'es'">SacaTurno - Turnos online</span>
-          <span v-if="langg === 'en'"
-            >SacaTurno - Online appointment booking</span
-          >
-          <p v-if="langg === 'es'">
-            SacaTurno es una aplicación web para que negocios como peluquerías,
-            centros de estética, masajistas, talleres mecánicos y otros, puedan
-            gestionar sus turnos de forma online. Ofrece 30 días de prueba
-            gratis. Luego, para seguir usándolo, se paga una suscripción mensual
-            a través de Mercado Pago, con activación automática. Solo tenés que
-            crear tu cuenta, configurar tu negocio y servicios, y ya podés
-            empezar a cargar turnos.
-          </p>
-          <p v-if="langg === 'en'">
-            SacaTurno is a SaaS (software as a service) intended for online
-            appointment booking. This service is ideal for businesses such as
-            hairdressers, beauty centers, masseuses, epilators, mechanical
-            workshops, etc. Whoever registers will have a free 30-day trial
-            period. Upon expiration, you must pay a monthly subscription through
-            Mercado Pago and its activation is instantaneous. To use it, you
-            must create your account, create your business, your services and
-            start uploading your appointments. The application was developed
-            with TypeScript, both the interface with Next.js and the server with
-            Node.js and Express.js. The latter stores and queries data to a
-            cloud database from MongoDB Atlas.
-          </p>
-          <div style="display: flex; align-items: end; gap: 5px" class="mt-2">
-            <p
-              style="
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 14px;
-                margin-right: 3px;
-              "
-              v-if="langg === 'en'"
-            >
-              Developed with:
-            </p>
-            <p
-              style="
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 14px;
-                margin-right: 3px;
-              "
-              v-if="langg === 'es'"
-            >
-              Desarrollado con:
-            </p>
-            <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
-            <img
-              src="@/assets/typescript.png"
-              title="TypeScript"
-              style="width: 23px; border-radius: 6px"
-              alt=""
-            />
-            <img
-              src="@/assets/next.png"
-              title="Next.js"
-              style="width: 24px"
-              alt=""
-            />
-            <img
-              src="@/assets/nodejs.png"
-              title="Node.js"
-              style="width: 19px"
-              alt=""
-            />
-            <img
-              src="@/assets/express.png"
-              title="Express.js"
-              style="width: 23px"
-              alt=""
-            />
-            <img
-              src="@/assets/mongodblogo.png"
-              title="MongoDB"
-              style="width: 23px; border-radius: 6px"
-              alt=""
-            />
-          </div>
-          <a
-            href="https://sacaturno.com.ar/"
-            target="_blank"
-            style="margin-bottom: 18px; cursor: pointer"
-          >
-            <div class="mt-4 linkCont">
-              <div
-                class="w-6 h-full"
-                style="
-                  display: flex !important;
-                  justify-content: center !important;
-                  align-items: center !important;
-                "
-              >
-                <font-awesome-icon
-                  icon="fa-solid fa-link"
-                  style="height: 12px; margin: 0 !important"
-                />
-              </div>
-              <span class="linkSpan">sacaturno.com.ar</span>
             </div>
           </a>
         </div>
@@ -449,7 +449,7 @@ import { Types } from 'mongoose'; import { Drawer as DrawerPrimitive } from
       </div>
 
       <!-- somacann -->
-      <div class="card">
+      <!-- <div class="card">
         <div class="card-img-cont">
           <img src="@/assets/cannabica.png" alt="" />
         </div>
@@ -494,7 +494,6 @@ import { Types } from 'mongoose'; import { Drawer as DrawerPrimitive } from
             >
               Desarrollado con:
             </p>
-            <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
             <img
               src="@/assets/mongodblogo.png"
               title="MongoDB"
@@ -540,6 +539,116 @@ import { Types } from 'mongoose'; import { Drawer as DrawerPrimitive } from
                 />
               </div>
               <span class="linkSpan">cannabicagroup.com.ar</span>
+            </div>
+          </a>
+        </div>
+      </div> -->
+
+      <!-- encino landing -->
+      <!-- telovendo panel -->
+      <div class="card">
+        <div class="card-img-cont">
+          <img src="@/assets/encino.png" alt="" />
+        </div>
+        <div class="detailsCont">
+          <span v-if="langg === 'es'">Encino Carpintería - Página Web </span>
+          <span v-if="langg === 'en'">Encino - Landing Page</span>
+          <p v-if="langg === 'es'">
+            Landing page desarrollada a medida para Encino Carpintería, diseñada
+            para presentar de forma clara la identidad del artesano y sus
+            servicios. Incluye una sección “Sobre mí”, una galería de trabajos
+            realizados, una presentación de las instalaciones del taller y un
+            módulo de reseñas de clientes para reforzar la confianza. Además,
+            integra un formulario de contacto funcional que permite recibir
+            consultas directamente desde la web. El sitio está optimizado para
+            ofrecer una experiencia rápida, moderna y completamente adaptada a
+            las necesidades del negocio.
+          </p>
+          <p v-if="langg === 'en'">
+            Custom landing page developed for Encino Carpintería, designed to
+            clearly present the craftsman’s identity and services. It includes
+            an “About Me” section, a gallery showcasing completed projects, an
+            overview of the workshop facilities, and a customer reviews module
+            to build trust. Additionally, it features a fully functional contact
+            form that allows inquiries to be submitted directly through the
+            website. The site is optimized to deliver a fast, modern user
+            experience, fully tailored to the needs of the business.
+          </p>
+          <div style="display: flex; align-items: end; gap: 5px" class="mt-2">
+            <p
+              style="
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                margin-right: 3px;
+              "
+              v-if="langg === 'en'"
+            >
+              Developed with:
+            </p>
+            <p
+              style="
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                margin-right: 3px;
+              "
+              v-if="langg === 'es'"
+            >
+              Desarrollado con:
+            </p>
+            <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
+            <img
+              src="@/assets/typescript.png"
+              title="TypeScript"
+              style="width: 23px; border-radius: 6px"
+              alt=""
+            />
+            <img
+              src="@/assets/next.png"
+              title="Next.js"
+              style="width: 24px"
+              alt=""
+            />
+            <img
+              src="@/assets/nodejs.png"
+              title="Node.js"
+              style="width: 19px"
+              alt=""
+            />
+            <img
+              src="@/assets/express.png"
+              title="Express.js"
+              style="width: 23px"
+              alt=""
+            />
+            <img
+              src="@/assets/mongodblogo.png"
+              title="MongoDB"
+              style="width: 23px; border-radius: 6px"
+              alt=""
+            />
+          </div>
+          <a
+            href="https://telovendosf.com.ar/"
+            target="_blank"
+            style="margin-bottom: 18px; cursor: pointer"
+          >
+            <div class="mt-4 linkCont">
+              <div
+                class="w-6 h-full"
+                style="
+                  display: flex !important;
+                  justify-content: center !important;
+                  align-items: center !important;
+                "
+              >
+                <font-awesome-icon
+                  icon="fa-solid fa-link"
+                  style="height: 12px; margin: 0 !important"
+                />
+              </div>
+              <span class="linkSpan">telovendosf.com.ar</span>
             </div>
           </a>
         </div>
@@ -759,7 +868,7 @@ import { Types } from 'mongoose'; import { Drawer as DrawerPrimitive } from
         <div class="detailsCont">
           <span v-if="langg === 'en'">eMart - Online store platform</span>
           <span v-if="langg === 'es'"
-            >eMart - Plataforma de tiendas online</span
+            >eMart - Plataforma de Tiendas Online</span
           >
 
           <p v-if="langg === 'es'">

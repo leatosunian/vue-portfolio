@@ -15,10 +15,10 @@
       >
       <h1 class="font-bold">Leandro Tosunian</h1>
       <span class="font-semibold reverse-text" v-if="langg === 'en'"
-        >a freelancer Full Stack Web Developer</span
+        >a Full Stack Web Developer</span
       >
       <span class="font-semibold reverse-text" v-if="langg === 'es'"
-        >desarrollador web Full Stack</span
+        >Desarrollador Web Full Stack</span
       >
       <div
         v-if="!darkMode"
