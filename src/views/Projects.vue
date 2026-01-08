@@ -449,7 +449,7 @@ import { Types } from 'mongoose'; import { Drawer as DrawerPrimitive } from
       </div>
 
       <!-- somacann -->
-      <!-- <div class="card">
+      <div class="card">
         <div class="card-img-cont">
           <img src="@/assets/cannabica.png" alt="" />
         </div>
@@ -542,7 +542,7 @@ import { Types } from 'mongoose'; import { Drawer as DrawerPrimitive } from
             </div>
           </a>
         </div>
-      </div> -->
+      </div>
 
       <!-- encino landing -->
       <!-- telovendo panel -->
