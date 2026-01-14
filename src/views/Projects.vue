@@ -120,6 +120,119 @@ import { Types } from 'mongoose'; import { Drawer as DrawerPrimitive } from
         </div>
       </div>
 
+      
+      <!-- altiva propiedades page -->
+      <div class="card">
+        <div class="card-img-cont">
+          <img src="@/assets/altiva.png" alt="" />
+        </div>
+        <div class="detailsCont">
+          <span v-if="langg === 'es'">Altiva Propiedades - Página Web con Catálogo</span>
+          <span v-if="langg === 'en'">Altiva Real Estate - Web Page</span>
+          <p v-if="langg === 'es'">
+            Página web desarrollada para Altiva Propiedades, una inmobiliaria de
+            Mar del Plata, Argentina, dedicada a la comercialización y alquiler
+            de inmuebles. El sitio cuenta con un diseño moderno y totalmente
+            responsivo, con una página principal institucional, un catálogo de
+            propiedades con filtros avanzados y formularios de contacto para
+            consultas personalizadas. La plataforma se complementa con un panel
+            de administración privado, desde el cual se gestiona el stock de
+            propiedades, las consultas recibidas y los clientes mediante un CRM
+            inmobiliario, optimizando el seguimiento de leads y la
+            administración comercial.
+          </p>
+          <p v-if="langg === 'en'">
+            Website developed for Altiva Propiedades, a real estate agency based
+            in Mar del Plata, Argentina, focused on property sales and rentals.
+            The site features a modern, fully responsive design, including an
+            institutional homepage, a property catalog with advanced filtering
+            options, and contact forms for personalized inquiries. The platform
+            is supported by a private administration panel, where property
+            listings, incoming inquiries, and clients are managed through a real
+            estate CRM, improving lead tracking and overall commercial
+            management.
+          </p>
+          <div style="display: flex; align-items: end; gap: 5px" class="mt-2">
+            <p
+              style="
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                margin-right: 3px;
+              "
+              v-if="langg === 'en'"
+            >
+              Developed with:
+            </p>
+            <p
+              style="
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                margin-right: 3px;
+              "
+              v-if="langg === 'es'"
+            >
+              Desarrollado con:
+            </p>
+            <!-- <img src="@/assets/mevn.png" style="width:70px; height:22px;margin-bottom:3px;" alt=""> -->
+            <img
+              src="@/assets/typescript.png"
+              title="TypeScript"
+              style="width: 23px; border-radius: 6px"
+              alt=""
+            />
+            <img
+              src="@/assets/next.png"
+              title="Next.js"
+              style="width: 24px"
+              alt=""
+            />
+            <img
+              src="@/assets/nodejs.png"
+              title="Node.js"
+              style="width: 19px"
+              alt=""
+            />
+            <img
+              src="@/assets/express.png"
+              title="Express.js"
+              style="width: 23px"
+              alt=""
+            />
+            <img
+              src="@/assets/mongodblogo.png"
+              title="MongoDB"
+              style="width: 23px; border-radius: 6px"
+              alt=""
+            />
+          </div>
+          <a
+            href="https://altivapropiedades.netlify.app/"
+            target="_blank"
+            style="margin-bottom: 18px; cursor: pointer"
+          >
+            <div class="mt-4 linkCont">
+              <div
+                class="w-6 h-full"
+                style="
+                  display: flex !important;
+                  justify-content: center !important;
+                  align-items: center !important;
+                "
+              >
+                <font-awesome-icon
+                  icon="fa-solid fa-link"
+                  style="height: 12px; margin: 0 !important"
+                />
+              </div>
+              <span class="linkSpan">altivapropiedades.com.ar</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+
       <!-- telovendo page -->
       <div class="card">
         <div class="card-img-cont">
